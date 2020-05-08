@@ -150,9 +150,14 @@
                     </div>
                 </div>
             </div>
+            <div class="descubra text-center">
+                <p class="h1">Descubra o Cloud Solution Center</p>
+                <p>Juntamos a melhor tecnologia do mercado com os especialistas mais qualificados.</p>
+                <a href="/contato" class="btn btn-dark btn-padrao mt-4">Agende uma Demo</a>
+            </div>
         </section>
         <section id="cases">
-            
+
         </section>
     </main>
     
