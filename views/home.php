@@ -85,7 +85,74 @@
             </div>
         </section>
         <section id="solucoes">
-
+            <div class="container">
+                <h1>Soluções</h1>
+                <div class="solucoes-box">
+                    <div class="solucoes-card">
+                        <h5><img src="views/img/sl-01.svg" alt="Omnichannel">Omnichannel</h5>
+                        <p>Atenda por voz, chat, email, redes sociais e whatsapp</p>
+                    </div>
+                    <div class="solucoes-card">
+                        <h5><img src="views/img/sl-02.svg" alt="Roteamento Inteligente">Roteamento Inteligente</h5>
+                        <p>Crie regras de negócios para cada perfil de cliente</p>
+                    </div>
+                    <div class="solucoes-card">
+                        <h5><img src="views/img/sl-03.svg" alt="URA Inteligente">URA Inteligente</h5>
+                        <p>Maximize a resolução de casos no atendimento eletrônico</p>
+                    </div>
+                    <div class="solucoes-card">
+                        <h5><img src="views/img/sl-04.svg" alt="WFO (WEM)">WFO (WEM)</h5>
+                        <p>Melhore a performance, crie forecasts, gere escalas de trabalho e garanta suas metas</p>
+                    </div>
+                    <div class="solucoes-card">
+                        <h5><img src="views/img/sl-05.svg" alt="Analytics">Analytics</h5>
+                        <p>Transforme voz em dados e extraia insights das interações da sua central de atendimento</p>
+                    </div>
+                    <div class="solucoes-card">
+                        <h5><img src="views/img/sl-06.svg" alt="Global Voice">Global Voice</h5>
+                        <p>Distribua sua operação em qualquer lugar do mundo e mantenha-se sempre conectado</p>
+                    </div>
+                    <div class="solucoes-card">
+                        <h5><img src="views/img/sl-07.svg" alt="Discador">Discador</h5>
+                        <p>Maximize com campanhas preditivas, progressivas power ou preview</p>
+                    </div>
+                    <div class="solucoes-card">
+                        <h5><img src="views/img/sl-08.svg" alt="Pesquisa de Satisfação">Pesquisa de Satisfação</h5>
+                        <p>Crie pesquisas de pós atendimento e maximize os KPIs de qualidade da sua operação</p>
+                    </div>
+                    <div class="solucoes-card">
+                        <h5><img src="views/img/sl-09.svg" alt="Relatórios e Dashboards">Relatórios e Dashboards</h5>
+                        <p>Extração personalizada e indicadores em tempo real para melhores tomadas de decisão</p>
+                    </div>
+                    <div class="solucoes-card">
+                        <h5><img src="views/img/sl-10.svg" alt="Automação">Automação</h5>
+                        <p>Obtenha ganhos operacionais conectando diferentes sistemas com facilidade e rapidez</p>
+                    </div>
+                    <div class="solucoes-card">
+                        <h5><img src="views/img/sl-11.svg" alt="Integração com CRM">Integração com CRM</h5>
+                        <p>Solução omnichannel para uma operação perfeitamente integrada aos sistemas de CRM</p>
+                    </div>
+                    <div class="solucoes-card">
+                        <h5><img src="views/img/sl-03.svg" alt="Integração com UC">Integração com UC</h5>
+                        <p>Redução de re-chamadas e maximização da satisfação dos seus clientes</p>
+                    </div>
+                    <div class="solucoes-card">
+                        <h5><img src="views/img/sl-12.svg" alt="Segurança e Compliance">Segurança e Compliance</h5>
+                        <p>Plataforma de proteção de dados pessoais e segurança certificada internacionalmente</p>
+                    </div>
+                    <div class="solucoes-card">
+                        <h5><img src="views/img/sl-06.svg" alt="Alta Disponibilidade">Alta Disponibilidade</h5>
+                        <p>Plataforma em nuvem com o mais elevado nível de disponibilidade do mercado</p>
+                    </div>
+                    <div class="solucoes-card">
+                        <h5><img src="views/img/sl-10.svg" alt="Open API">Open API</h5>
+                        <p>Conexão com plataformas de marketing, cobrança, ERP ou sistemas proprietários</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cases">
+            
         </section>
     </main>
     

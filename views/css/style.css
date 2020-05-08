@@ -124,3 +124,41 @@ header .navbar{
 #beneficios h4{
     font-family: lato-bold, sans-serif;
 }
+
+/* ==========================================| SOLUÇÕES |========================================== */
+
+#solucoes{
+    background-color: #f8f8f9;
+}
+
+#solucoes h1{
+    font-family: lato-bold, sans-serif;
+    color: #d02b2f;
+    margin-top: 1.5rem;
+}
+
+#solucoes h5{
+    font-family: lato-bold, sans-serif;
+    color: #d02b2f;
+}
+
+#solucoes p{
+    color: #242f36;
+}
+
+#solucoes img{
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.solucoes-box{
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.solucoes-card{
+    width: 30%;
+    margin: 2rem 0;
+}
