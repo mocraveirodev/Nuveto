@@ -3,6 +3,46 @@
 @media only screen and (max-width: 992px) {
     header .header-logo{
         width: 8rem;
+        height: 3rem;
+    }
+
+    header .navbar{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+@media only screen and (max-width: 768px) {
+    header .header-logo{
+        width: 8rem;
+        height: 3rem;
+    }
+}
+@media only screen and (max-width: 576px) {
+    header .header-logo{
+        width: 5rem;
         height: 2rem;
+    }
+}
+
+/* ==========================================| BANNER |========================================== */
+
+@media only screen and (max-width: 992px) {
+    .banner-text .banner-bottom{
+        width: 100%;
+        margin-top: 3rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .banner-text p{
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .banner-text .banner-yellow{
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .banner-text .banner-bottom{
+        font-size: 1rem;
     }
 }
