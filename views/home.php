@@ -65,7 +65,27 @@
             </div>
         </section>
         <section id="beneficios">
-            
+            <h1>Benefícios</h1>
+            <div class="container">
+                <div class="beneficios-card">
+                    <img src="views/img/bn-01.svg" alt="Vendas e Marketing">
+                    <h4>Vendas e Marketing</h4>
+                    <p>Reduza seus custos e maximize o desempenho da sua operação de vendas. Defina um novo padrão de produtividade e desempenho de vendas, com um sistema que seja o melhor amigo do seu CRM</p>
+                </div>
+                <div class="beneficios-card">
+                    <img src="views/img/bn-02.svg" alt="Atendimento ao Cliente">
+                    <h4>Atendimento ao Cliente</h4>
+                    <p>Seu cliente no centro de seus negócios. Permita interagir no canal de sua preferência e mantenha uma visão unificada da jornada do cliente em todos os pontos de contato.</p>
+                </div>
+                <div class="beneficios-card">
+                    <img src="views/img/bn-03.svg" alt="Cobrança">
+                    <h4>Cobrança</h4>
+                    <p>Potencialize sua recuperação de crédito e promessas de pagamento permitindo que seus agentes entrem em contato com mais devedores a cada dia.</p>
+                </div>
+            </div>
+        </section>
+        <section id="solucoes">
+
         </section>
     </main>
     
