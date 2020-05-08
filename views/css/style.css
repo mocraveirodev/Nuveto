@@ -1,0 +1,81 @@
+/* ==========================================| FONTES |========================================== */
+
+@font-face {
+    font-family: lato-regular;
+    src: local('Lato-Regular.ttf'), url('fonts/Lato-Regular.ttf');
+    src: url('fonts/Lato-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: lato-bold;
+    src: local('Lato-Bold.ttf'), url('fonts/Lato-Bold.ttf');
+    src: url('fonts/Lato-Bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: lato-black;
+    src: local('Lato-Black.ttf'), url('fonts/Lato-Black.ttf');
+    src: url('fonts/Lato-Black.ttf') format('opentype');
+}
+
+/* ==========================================| GERAL |========================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: lato-regular, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    vertical-align:middle;
+}
+
+.btn-padrao{
+    padding: 0.5rem 3rem;
+    border-radius: 2rem;
+}
+
+/* ==========================================| MENU |========================================== */
+
+header .header-logo{
+    width: 8rem;
+    height: 3rem;
+}
+
+header .navbar{
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(0,0,0,0.4);
+}
+
+/* ==========================================| GERAL |========================================== */
+
+#banner{
+    background: url('../img/hero-image.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.banner-text p{
+    font-family: lato-bold, sans-serif;
+    font-size: 3rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.banner-text .banner-yellow{
+    color: #ffcc00;
+    font-family: lato-black, sans-serif;
+    font-size: 4rem;
+}
+
+.banner-text .banner-bottom{
+    font-size: 1.1rem;
+    width: 65%;
+}
+
+.banner-text .btn{
+    color: #242f36;
+}
