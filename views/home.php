@@ -157,7 +157,22 @@
             </div>
         </section>
         <section id="cases">
-
+            <div class="cases-box">
+                <div class="cases-card">
+                    <img src="views/img/sumup-logo.png" alt="Logo Sumup" class="cases-sumup">
+                    <h5>Case Sumup</h5>
+                    <p>SumUp aumenta produtividade de atendentes em até 35%</p>
+                    <p>Com adoção de solução de Contact Center na Nuvem e implementação da Nuveto, 15% das chamadas são resolvidas pela URA antes de chegarem aos operadores e 20% são direcionadas ao WhatsApp</p>
+                    <a href="/contato" class="btn btn-success mt-4">Leia mais</a>
+                </div>
+                <div class="cases-card">
+                    <img src="views/img/sharecare.jpg" alt="Logo Sharecare" class="cases-share">
+                    <h5>Case Sharecare</h5>
+                    <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus</p>
+                    <a href="/contato" class="btn btn-success mt-4">Leia mais</a>
+                </div>
+            </div>
         </section>
     </main>
     

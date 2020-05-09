@@ -166,7 +166,7 @@ header .navbar{
 .descubra{
     width: 70%;
     background-color: #d02b2f;
-    margin: 0 auto;
+    margin: 0 auto 3rem auto;
     padding: 3rem 20%;
 }
 
@@ -176,4 +176,57 @@ header .navbar{
 }
 #solucoes .descubra .h1{
     margin-top: 0;
+}
+
+/* ==========================================| CASES |========================================== */
+
+#cases{
+    background-color: #e9e9e9;
+    /* height: 80vh; */
+}
+
+.cases-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cases-card{
+    background-color: #ffffff;
+    width: 25%;
+    padding: 2rem 0 0 2rem;
+    margin: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cases-sumup{
+    width: 80%;
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.cases-share{
+    width: 90%;
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.cases-box h5{
+    color: #d02b2f;
+    font-family: lato-bold, sans-serif;
+    align-self: flex-start;
+}
+
+.cases-box p{
+    color: #303e48;
+    padding-right: 1rem;
+}
+
+.cases-card .btn{
+    align-self: flex-end;
+    justify-self: self-end;
+    border-radius: 0;
 }
