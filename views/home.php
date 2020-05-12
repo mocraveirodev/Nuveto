@@ -189,34 +189,34 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row">
-                                    <div class="col-md-3 col-6 logo-sumup"></div>
-                                    <div class="col-md-3 col-6 logo-sharecare"></div>
-                                    <div class="col-md-3 col-6 logo-votorantim"></div>
-                                    <div class="col-md-3 col-6 logo-open"></div>
+                                    <div class="col-md-2 col-4 logo-sumup"></div>
+                                    <div class="col-md-2 col-4 logo-sharecare"></div>
+                                    <div class="col-md-2 col-4 logo-votorantim"></div>
+                                    <div class="col-md-2 col-4 logo-open"></div>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="row">
-                                    <div class="col-md-3 col-6 logo-anhembi"></div>
-                                    <div class="col-md-3 col-6 logo-uze"></div>
-                                    <div class="col-md-3 col-6 logo-omni"></div>
-                                    <div class="col-md-3 col-6 logo-itau"></div>
+                                    <div class="col-md-2 col-4 logo-anhembi"></div>
+                                    <div class="col-md-2 col-4 logo-uze"></div>
+                                    <div class="col-md-2 col-4 logo-omni"></div>
+                                    <div class="col-md-2 col-4 logo-itau"></div>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="row">
-                                    <div class="col-md-3 col-6 logo-leroy"></div>
-                                    <div class="col-md-3 col-6 logo-kainos"></div>
-                                    <div class="col-md-3 col-6 logo-wiz"></div>
-                                    <div class="col-md-3 col-6 logo-caixa"></div>
+                                    <div class="col-md-2 col-4 logo-leroy"></div>
+                                    <div class="col-md-2 col-4 logo-kainos"></div>
+                                    <div class="col-md-2 col-4 logo-wiz"></div>
+                                    <div class="col-md-2 col-4 logo-caixa"></div>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="row">
-                                    <div class="col-md-3 col-6 logo-wiser"></div>
-                                    <div class="col-md-3 col-6 logo-rodobens"></div>
-                                    <div class="col-md-3 col-6 logo-vero"></div>
-                                    <div class="col-md-3 col-6 logo-rni"></div>
+                                    <div class="col-md-2 col-4 logo-wiser"></div>
+                                    <div class="col-md-2 col-4 logo-rodobens"></div>
+                                    <div class="col-md-2 col-4 logo-vero"></div>
+                                    <div class="col-md-2 col-4 logo-rni"></div>
                                 </div>
                             </div>
                         </div>
