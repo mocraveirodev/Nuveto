@@ -209,7 +209,7 @@ header .navbar{
 }
 
 .cases-share{
-    width: 90%;
+    width: 80%;
     height: 3rem;
     margin-bottom: 2rem;
 }
@@ -229,4 +229,130 @@ header .navbar{
     align-self: flex-end;
     justify-self: self-end;
     border-radius: 0;
+}
+
+/* ==========================================| CLIENTES |========================================== */
+
+#clientes{
+    background-color: #ffffff;
+}
+
+#clientes h1{
+    font-family: lato-bold, sans-serif;
+    color: #d02b2f;
+    margin-top: 1.5rem;
+}
+
+#clientes p{
+    color: #242f36;
+}
+
+#clientesCarousel{
+    width: 100%;
+}
+
+.clientes .carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -40px;
+}
+
+.clientes .carousel-indicators li {
+    background: #000;
+    border-radius: 50%;
+    /* width: 15px; */
+    /* height: 0.5px; */
+}
+
+.clientes .carousel-indicators .active {
+background: #d02b2f;
+}
+
+.carousel-inner{
+    padding: 0 8rem;
+}
+
+.carousel-item .row{
+    justify-content: space-between;
+}
+
+.logo-sumup{
+    background: url('../img/sumup-logo.png') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
+}
+.logo-sharecare{
+    background: url('../img/Logo_Sharecare.png') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
+}
+.logo-votorantim{
+    background: url('../img/logo_votorantim.jpg') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
+}
+.logo-open{
+    background: url('../img/logo_open-english.png') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
+}
+.logo-anhembi{
+    background: url('../img/logo_anhembi.png') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
+}
+.logo-uze{
+    background: url('../img/logo_uze.png') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
+}
+.logo-omni{
+    background: url('../img/logo_omni.png') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
+}
+.logo-itau{
+    background: url('../img/logo_itau.png') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
+}
+.logo-leroy{
+    background: url('../img/logo_leroy.png') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
+}
+.logo-kainos{
+    background: url('../img/logo_kainos.png') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
+}
+.logo-wiz{
+    background: url('../img/logo_wiz.png') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
+}
+.logo-caixa{
+    background: url('../img/logo_caixa-seguradora.png') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
+}
+.logo-wiser{
+    background: url('../img/logo_WISER.png') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
+}
+.logo-rodobens{
+    background: url('../img/logo_Rodobens.png') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
+}
+.logo-vero{
+    background: url('../img/logo_vero.svg') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
+}
+.logo-rni{
+    background: url('../img/logo_rni.png') no-repeat center center;
+    background-size: contain;
+    height: 5rem;
 }

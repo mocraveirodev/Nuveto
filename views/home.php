@@ -174,12 +174,72 @@
                 </div>
             </div>
         </section>
+        <section id="clientes">
+            <div class="container">
+                <h1>Clientes</h1>
+                <p>Veja quem já confia na Nuveto.</p>
+                <div class="row clientes">
+                    <div id="clientesCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#clientesCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#clientesCarousel" data-slide-to="1"></li>
+                            <li data-target="#clientesCarousel" data-slide-to="2"></li>
+                            <li data-target="#clientesCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-3 col-6 logo-sumup"></div>
+                                    <div class="col-md-3 col-6 logo-sharecare"></div>
+                                    <div class="col-md-3 col-6 logo-votorantim"></div>
+                                    <div class="col-md-3 col-6 logo-open"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3 col-6 logo-anhembi"></div>
+                                    <div class="col-md-3 col-6 logo-uze"></div>
+                                    <div class="col-md-3 col-6 logo-omni"></div>
+                                    <div class="col-md-3 col-6 logo-itau"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3 col-6 logo-leroy"></div>
+                                    <div class="col-md-3 col-6 logo-kainos"></div>
+                                    <div class="col-md-3 col-6 logo-wiz"></div>
+                                    <div class="col-md-3 col-6 logo-caixa"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3 col-6 logo-wiser"></div>
+                                    <div class="col-md-3 col-6 logo-rodobens"></div>
+                                    <div class="col-md-3 col-6 logo-vero"></div>
+                                    <div class="col-md-3 col-6 logo-rni"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#clientesCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#clientesCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./views/js/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./views/js/smoothscroll.js"></script>
+    <script src="./views/js/carousel.js"></script>
 </body>
 </html>
