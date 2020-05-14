@@ -1,9 +1,14 @@
+<?php
+    include_once('views/includes/envio.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="description" content="Conheça a Nuveto, uma empresa inovadora de tecnologia para Atendimento ao cliente e Customer Experience CX. Visando a transformação das estratégias para melhorar o relacionamento das marcas com seus clientes, ajudando-as a se diferenciar neste cenário extremamente competitivo. Descubra o Cloud Solution Center.">
     <meta name="keywords" content="Nuveto,Atendimento ao Cliente,CX,Customer Experience,Relacionamento ao cliente,Cloud,Cloudcomputing,CallCenter,Call-Center,Cloud Solution Center">
     <meta name="author" content="Monica Craveiro">
@@ -11,6 +16,7 @@
     <link rel="shortcut icon" href="views/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="views/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="views/css/style.css">
     <link rel="stylesheet" href="views/css/m-style.css">
 </head>
@@ -18,32 +24,32 @@
     <header>
         <nav data-scroll-header class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="views/img/LogoNuvetoBrancaVer.png" class="header-logo" alt="Logo Nuveto"></a>
+                <a data-scroll class="navbar-brand" href="/"><img src="views/img/LogoNuvetoBrancaVer.png" class="header-logo" alt="Logo Nuveto"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quem Somos</a>
+                        <a data-scroll class="nav-link" href="#">Quem Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">O que Fazemos</a>
+                        <a data-scroll class="nav-link" href="#">O que Fazemos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Por que a Nuvem?</a>
+                        <a data-scroll class="nav-link" href="#">Por que a Nuvem?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cases de Sucesso</a>
+                        <a data-scroll class="nav-link" href="#cases">Cases de Sucesso</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Clientes</a>
+                        <a data-scroll class="nav-link" href="#clientes">Clientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Parceiros</a>
+                        <a data-scroll class="nav-link" href="#">Parceiros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a data-scroll class="nav-link" href="#contato">Contato</a>
                     </li>
                     </ul>
                 </div>        
@@ -59,7 +65,7 @@
                     <p class="pl-4">atual agora também no</p>
                     <p class="banner-yellow text-right">seu Contact Center!</p>
                     <p class="banner-bottom">A Nuveto te oferece tecnologias em nuvem para diferenciar a sua marca. Esqueça limitações, deixe que a sua criatividade seja o limite para encantar seus clientes.</p>
-                    <a href="/contato" class="btn btn-success btn-padrao mt-5">Saiba mais</a>
+                    <a data-scroll href="/contato" class="btn btn-success btn-padrao mt-5">Saiba mais</a>
                 </div>
 
             </div>
@@ -153,7 +159,7 @@
             <div class="descubra text-center">
                 <p class="h1">Descubra o Cloud Solution Center</p>
                 <p>Juntamos a melhor tecnologia do mercado com os especialistas mais qualificados.</p>
-                <a href="/contato" class="btn btn-dark btn-padrao mt-4">Agende uma Demo</a>
+                <a data-scroll href="/contato" class="btn btn-dark btn-padrao mt-4">Agende uma Demo</a>
             </div>
         </section>
         <section id="cases">
@@ -163,19 +169,19 @@
                     <h5>Case Sumup</h5>
                     <p>SumUp aumenta produtividade de atendentes em até 35%</p>
                     <p>Com adoção de solução de Contact Center na Nuvem e implementação da Nuveto, 15% das chamadas são resolvidas pela URA antes de chegarem aos operadores e 20% são direcionadas ao WhatsApp</p>
-                    <a href="/contato" class="btn btn-success mt-4">Leia mais</a>
+                    <a data-scroll href="/contato" class="btn btn-success mt-4">Leia mais</a>
                 </div>
                 <div class="cases-card">
                     <img src="views/img/sharecare.jpg" alt="Logo Sharecare" class="cases-share">
                     <h5>Case Sharecare</h5>
                     <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus</p>
-                    <a href="/contato" class="btn btn-success mt-4">Leia mais</a>
+                    <a data-scroll href="/contato" class="btn btn-success mt-4">Leia mais</a>
                 </div>
             </div>
         </section>
         <section id="clientes">
-            <div class="container">
+            <div class="container mt-5">
                 <h1>Clientes</h1>
                 <p>Veja quem já confia na Nuveto.</p>
                 <div class="row clientes">
@@ -232,14 +238,152 @@
                 </div>
             </div>
         </section>
+        <section id="contato">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 formulario">
+                        <h1>Fale Conosco:</h1>
+                        <p>Entre agora mesmo em contato com um dos consultores da Nuveto, esclareça suas dúvidas e conheça o portifólio do Cloud Solution Center | Nuveto</p>
+                        <!-- <form id="mailform" name="mailform"> -->
+                        <form action="/enviar" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <input value="murilo.silva@fuseiot.io" name="toemail" type="text" hidden />
+                            </div>
+                            <div class="form-group">
+                                <input value="contato@fuseiot.io" name="from" type="text" hidden />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Seu telefone" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="empresa" id="empresa" placeholder="Sua empresa" required/>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Sua mensagem"></textarea>
+                            </div>
+                            <button type="submit" id="sendemail" class="btn btn-padrao btn-success" onclick="GoSend();"><img class="btn-ctt" src="views/img/paper_plane-512.svg" alt="Enviar"></img> Enviar contato</button>
+                            <div class="form-group">
+                                <select class="form-control" name="sendmethod" hidden >
+                                    <option value="smtp" selected >SMTP</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4 localizacao">
+                        <h1>Onde estamos</h1>
+                        <p>SÃO PAULO</p>
+                        <br>
+                        <p>Av. Roque Petroni Jr., 850</p>
+                        <p>10º andar, Torre Jaceru</p>
+                        <p>Jd. das Acácias - 04707-000</p>
+                        <br>
+                        <p>BOGOTÁ</p>
+                        <br>
+                        <p>Carrera 7 #116-50</p>
+                        <p>Piso 6 - Oficina 6-127</p>
+                        <br>
+                        <p><a href="mailto:marketing@nuveto.com.br">marketing@nuveto.com.br</a></p>
+                        <p><a href="tel:+551142008282">+55 (11) 4200-8282</a></p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="modal-contato">
+            <div class="modal fade" id="modalOk" tabindex="-1" role="dialog" aria-labelledby="modalOkTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <h3>Pronto!</h3>
+                            <p>Em breve nossos especialistas irão entrar em contato para dar mais informações.</p>
+                            <a class="btn btn-padrao btn-success text-white" data-dismiss="modal" aria-label="Fechar">OK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalErro" tabindex="-1" role="dialog" aria-labelledby="modalErroTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <h3>Erro!</h3>
+                            <p><?= "Houve um erro enviando o email. Tente de novo mais tarde!" ?></p>
+                            <a class="btn btn-padrao btn-success text-white" data-dismiss="modal" aria-label="Fechar">OK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <img src="views/img/LogoNuvetoBrancaVer.png" class="footer-logo" alt="Logo Nuveto">
+                <div class="footer-text">
+                    <div class="footer-endereco">
+                        <p>SÃO PAULO</p>
+                        <br>
+                        <p>Av. Roque Petroni Jr., 850</p>
+                        <p>10º andar, Torre Jaceru</p>
+                        <p>Jd. das Acácias - 04707-000</p>
+                        <br>
+                        <p>BOGOTÁ</p>
+                        <br>
+                        <p>Carrera 7 #116-50</p>
+                        <p>Piso 6 - Oficina 6-127</p>
+                    </div>
+                    <div class="footer-map">
+                        <div class="footer-map-empresa">
+                            <nav>
+                                <ul>
+                                    <li><a data-scroll href="" class="footer-map-titulo">Empresa</a></li>
+                                    <li><a data-scroll href="">Quem Somos</a></li>
+                                    <li><a data-scroll href="">O que Fazemos</a></li>
+                                    <li><a data-scroll href="">Por que a Nuvem?</a></li>
+                                    <li><a data-scroll href="">Imprensa</a></li>
+                                    <li><a data-scroll href="">Contato</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-map-solucoes">
+                            <nav>
+                                <ul>
+                                    <li><a data-scroll href="" class="footer-map-titulo">Soluções</a></li>
+                                    <li><a data-scroll href="">Cases de Sucesso</a></li>
+                                    <li><a data-scroll href="">Clientes</a></li>
+                                    <li><a data-scroll href="">Parceiros</a></li>
+                                    <li><a data-scroll href="">Blog</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-direitos">
+                    <p>Copyright &copy; 2020 Nuveto. Todos os direitos reservados.</p>
+                    <div class="footer-redes">
+                        <nav>
+                            <ul>
+                                <li><a target="_blank" href="https://www.linkedin.com/company/nuveto/"><i class="fab fa-2x fa-linkedin-in"></i></a></li>
+                                <li><a target="_blank" href="https://www.facebook.com/nuveto/"><i class="fab fa-2x fa-facebook-f"></i></a></li>
+                                <li><a target="_blank" href="https://twitter.com/nuvetobr"><i class="fab fa-2x fa-twitter"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./views/js/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./views/js/smoothscroll.js"></script>
-    <script src="./views/js/carousel.js"></script>
 </body>
 </html>
