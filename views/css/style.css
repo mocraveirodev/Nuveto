@@ -433,6 +433,14 @@ background: #d02b2f;
     resize: none;
 }
 
+#contato button{
+    padding: 0.5rem 1.5rem;
+}
+
+#contato button img{
+    margin-right: 0.5rem;
+}
+
 /* ==========================================| FOOTER |========================================== */
 
 footer{

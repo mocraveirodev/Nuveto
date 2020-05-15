@@ -1,5 +1,12 @@
 <?php
     include_once('views/includes/envio.php');
+
+    if(isset($_SESSION['mailresult'])){
+        $mailresult = json_encode($_SESSION['mailresult']);
+    }
+    if(isset($_SESSION['ErrorInfo'])){
+        $ErrorInfo = json_encode($_SESSION['ErrorInfo']);
+    }
 ?>
 
 <!DOCTYPE html>
@@ -242,16 +249,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 formulario">
-                        <h1>Fale Conosco:</h1>
+                        <h1>Fale Conosco</h1>
                         <p>Entre agora mesmo em contato com um dos consultores da Nuveto, esclareça suas dúvidas e conheça o portifólio do Cloud Solution Center | Nuveto</p>
                         <!-- <form id="mailform" name="mailform"> -->
-                        <form action="/enviar" method="post" enctype="multipart/form-data">
-                            <div class="form-group">
-                                <input value="murilo.silva@fuseiot.io" name="toemail" type="text" hidden />
-                            </div>
-                            <div class="form-group">
-                                <input value="contato@fuseiot.io" name="from" type="text" hidden />
-                            </div>
+                        <form action="/nuveto/contato" method="post" enctype="multipart/form-data">
+                            <!-- <div class="form-group">
+                                <input value="marketing@nuveto.com.br" name="toemail" type="text" hidden />
+                            </div> -->
+                            <!-- <div class="form-group">
+                                <input value="marketing@nuveto.com.br" name="from" type="text" hidden />
+                            </div> -->
                             <div class="form-group">
                                 <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome" required/>
                             </div>
@@ -267,23 +274,18 @@
                             <div class="form-group">
                                 <textarea class="form-control" id="message" name="message" rows="4" placeholder="Sua mensagem"></textarea>
                             </div>
-                            <button type="submit" id="sendemail" class="btn btn-padrao btn-success" onclick="GoSend();"><img class="btn-ctt" src="views/img/paper_plane-512.svg" alt="Enviar"></img> Enviar contato</button>
-                            <div class="form-group">
-                                <select class="form-control" name="sendmethod" hidden >
-                                    <option value="smtp" selected >SMTP</option>
-                                </select>
-                            </div>
+                            <button type="submit" class="btn btn-padrao btn-success"><img src="views/img/paper_plane-512.svg" alt="Enviar"></img> Enviar contato</button>
                         </form>
                     </div>
                     <div class="col-md-4 localizacao">
                         <h1>Onde estamos</h1>
-                        <p>SÃO PAULO</p>
+                        <p>SÃO PAULO - SP - BRASIL</p>
                         <br>
                         <p>Av. Roque Petroni Jr., 850</p>
                         <p>10º andar, Torre Jaceru</p>
                         <p>Jd. das Acácias - 04707-000</p>
                         <br>
-                        <p>BOGOTÁ</p>
+                        <p>BOGOTÁ - COLÔMBIA</p>
                         <br>
                         <p>Carrera 7 #116-50</p>
                         <p>Piso 6 - Oficina 6-127</p>
@@ -302,7 +304,7 @@
                         <div class="modal-body">
                             <h3>Pronto!</h3>
                             <p>Em breve nossos especialistas irão entrar em contato para dar mais informações.</p>
-                            <a class="btn btn-padrao btn-success text-white" data-dismiss="modal" aria-label="Fechar">OK</a>
+                            <a class="btn btn-success btn-padrao" data-dismiss="modal" aria-label="Fechar">OK</a>
                         </div>
                     </div>
                 </div>
@@ -313,8 +315,9 @@
                     <div class="modal-content">
                         <div class="modal-body">
                             <h3>Erro!</h3>
-                            <p><?= "Houve um erro enviando o email. Tente de novo mais tarde!" ?></p>
-                            <a class="btn btn-padrao btn-success text-white" data-dismiss="modal" aria-label="Fechar">OK</a>
+                            <p>Houve um erro enviando o email. Tente de novo mais tarde!</p>
+                            <p><?=$ErrorInfo?></p>
+                            <a class="btn btn-success btn-padrao" data-dismiss="modal" aria-label="Fechar">OK</a>
                         </div>
                     </div>
                 </div>
@@ -327,13 +330,13 @@
                 <img src="views/img/LogoNuvetoBrancaVer.png" class="footer-logo" alt="Logo Nuveto">
                 <div class="footer-text">
                     <div class="footer-endereco">
-                        <p>SÃO PAULO</p>
+                        <p>SÃO PAULO - SP - BRASIL</p>
                         <br>
                         <p>Av. Roque Petroni Jr., 850</p>
                         <p>10º andar, Torre Jaceru</p>
                         <p>Jd. das Acácias - 04707-000</p>
                         <br>
-                        <p>BOGOTÁ</p>
+                        <p>BOGOTÁ - COLÔMBIA</p>
                         <br>
                         <p>Carrera 7 #116-50</p>
                         <p>Piso 6 - Oficina 6-127</p>
@@ -385,5 +388,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./views/js/smoothscroll.js"></script>
+    <script>
+        let mailresult = "<?=$mailresult?>";
+        let ErrorInfo = "<?=$ErrorInfo?>";
+        
+        if(mailresult != ""){
+            $('#modalOk').modal('show');
+        }
+        if(ErrorInfo != ""){
+            $('#modalErro').modal('show');
+        }
+    </script>
 </body>
 </html>
