@@ -27,37 +27,54 @@
     <link rel="stylesheet" href="views/css/style.css">
     <link rel="stylesheet" href="views/css/m-style.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="100">
+<body>
     <header>
         <nav data-scroll-header class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
-                <a data-scroll class="navbar-brand" href="/"><img src="views/img/LogoNuvetoBrancaVer.png" class="header-logo" alt="Logo Nuveto"></a>
+                <a data-scroll class="navbar-brand" href="#banner"><img src="views/img/LogoNuvetoBrancaVer.png" class="header-logo" alt="Logo Nuveto"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
                     <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#">Quem Somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#">O que Fazemos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#">Por que a Nuvem?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#cases">Cases de Sucesso</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#clientes">Clientes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#">Parceiros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#contato">Contato</a>
-                    </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#solucoes">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#solucoes">O que Fazemos</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#">Por que a Nuvem?</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#cases">Cases de Sucesso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#clientes">Clientes</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#">Parceiros</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav nav-redes">
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link" href="https://www.linkedin.com/company/nuveto/">
+                                <i class="fab fa-2x fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link" href="https://www.facebook.com/nuveto/">
+                                <i class="fab fa-2x fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link" href="https://twitter.com/nuvetobr">
+                                <i class="fab fa-2x fa-twitter"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>        
             </div>
@@ -65,16 +82,28 @@
     </header>
     <main>
         <section id="banner">
-            <div class="container text-center">
-                <div class="banner-text">
-                    <p class="text-left">A</p>
-                    <p class="banner-yellow text-left">velocidade do mundo</p>
-                    <p class="pl-4">atual agora também no</p>
-                    <p class="banner-yellow text-right">seu Contact Center!</p>
-                    <p class="banner-bottom">A Nuveto te oferece tecnologias em nuvem para diferenciar a sua marca. Esqueça limitações, deixe que a sua criatividade seja o limite para encantar seus clientes.</p>
-                    <a data-scroll href="/contato" class="btn btn-success btn-padrao mt-5">Saiba mais</a>
+            <div id="carouselBanner" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item nuveto active">
+                        <div class="banner-text">
+                            <p class="text-left">A</p>
+                            <p class="banner-yellow text-left">velocidade do mundo</p>
+                            <p class="">atual agora também no</p>
+                            <p class="banner-yellow text-right">seu Contact Center!</p>
+                            <p class="banner-bottom">A Nuveto te oferece tecnologias em nuvem para diferenciar a sua marca. Esqueça limitações, deixe que a sua criatividade seja o limite para encantar seus clientes.</p>
+                            <a data-scroll href="#contato" class="btn btn-success btn-padrao mt-5">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item covid">
+                        <div class="banner-text">
+                            <p class="text-left">Programa</p>
+                            <p class="banner-yellow text-left">SOS COVID-19</p>
+                            <p class="">migre seu contact center para </p>
+                            <p class="banner-yellow text-right">home office em até 3 dias</p>
+                            <a data-scroll href="#contato" class="btn btn-success btn-padrao mt-5">Saiba mais</a>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </section>
         <section id="beneficios">
@@ -100,6 +129,7 @@
         <section id="solucoes">
             <div class="container">
                 <h1>Soluções</h1>
+                <p class="mt-5">Somos especializados em soluções inovadoras em nuvem com foco em elevar a satisfação do cliente, aumentar a eficiência do atendimento por meio de automações e prover informações que facilitem a tomada de decisões e a governança da operação.</p>
                 <div class="solucoes-box">
                     <div class="solucoes-card">
                         <h5><img src="views/img/sl-01.svg" alt="Omnichannel">Omnichannel</h5>
@@ -166,7 +196,7 @@
             <div class="descubra text-center">
                 <p class="h1">Descubra o Cloud Solution Center</p>
                 <p>Juntamos a melhor tecnologia do mercado com os especialistas mais qualificados.</p>
-                <a data-scroll href="/contato" class="btn btn-dark btn-padrao mt-4">Agende uma Demo</a>
+                <a data-scroll href="#contato" class="btn btn-dark btn-padrao mt-4">Agende uma Demo</a>
             </div>
         </section>
         <section id="cases">
@@ -176,19 +206,19 @@
                     <h5>Case Sumup</h5>
                     <p>SumUp aumenta produtividade de atendentes em até 35%</p>
                     <p>Com adoção de solução de Contact Center na Nuvem e implementação da Nuveto, 15% das chamadas são resolvidas pela URA antes de chegarem aos operadores e 20% são direcionadas ao WhatsApp</p>
-                    <a data-scroll href="/contato" class="btn btn-success mt-4">Leia mais</a>
+                    <a data-scroll href="#contato" class="btn btn-success mt-4">Saiba mais</a>
                 </div>
                 <div class="cases-card">
                     <img src="views/img/sharecare.jpg" alt="Logo Sharecare" class="cases-share">
                     <h5>Case Sharecare</h5>
                     <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus</p>
-                    <a data-scroll href="/contato" class="btn btn-success mt-4">Leia mais</a>
+                    <a data-scroll href="#contato" class="btn btn-success mt-4">Saiba mais</a>
                 </div>
             </div>
         </section>
         <section id="clientes">
-            <div class="container mt-5">
+            <div class="container pt-5">
                 <h1>Clientes</h1>
                 <p>Veja quem já confia na Nuveto.</p>
                 <div class="row clientes">
@@ -373,7 +403,7 @@
                         <nav>
                             <ul>
                                 <li><a target="_blank" href="https://www.linkedin.com/company/nuveto/"><i class="fab fa-2x fa-linkedin-in"></i></a></li>
-                                <li><a target="_blank" href="https://www.facebook.com/nuveto/"><i class="fab fa-2x fa-facebook-f"></i></a></li>
+                                <li><a target="_blank" href="https://www.facebook.com/nuveto/"><i class="fab fa-2x fa-facebook-square"></i></a></li>
                                 <li><a target="_blank" href="https://twitter.com/nuvetobr"><i class="fab fa-2x fa-twitter"></i></a></li>
                             </ul>
                         </nav>
@@ -382,6 +412,12 @@
             </div>
         </div>
     </footer>
+
+    <div id="redesSociais" class="social">
+        <a href="https://www.linkedin.com/company/nuveto/" id="linkedin" target="_blank">LinkedIn <i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/nuveto/" id="facebook" target="_blank">Facebook <i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/nuvetobr" id="twitter" target="_blank">Twitter <i class="fab fa-twitter"></i></a>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

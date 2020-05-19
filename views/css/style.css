@@ -53,32 +53,44 @@ header .navbar{
     color: #ffffff;
 }
 
-/* ==========================================| GERAL |========================================== */
+.nav-redes .nav-item{
+    margin: 0 1rem;
+}
 
-#banner{
+/* ==========================================| BANNER |========================================== */
+
+#banner .carousel-item{
+    height: 100vh;
+}
+
+#banner .nuveto{
     background: url('../img/hero-image.png') no-repeat center center;
     background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
+}
+
+#banner .covid{
+    background: url('../img/bannercovid.png') no-repeat center center;
+    background-size: cover;
+}
+
+.banner-text{
+    margin: 10% 25%;
+    text-align: center;
 }
 
 .banner-text p{
     font-family: lato-bold, sans-serif;
-    font-size: 3rem;
-    width: 70%;
-    margin: 0 auto;
+    font-size: 2rem;
 }
 
 .banner-text .banner-yellow{
     color: #ffcc00;
     font-family: lato-black, sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .banner-text .banner-bottom{
-    font-size: 1.1rem;
-    width: 65%;
+    font-size: 1rem;
 }
 
 .banner-text .btn{
@@ -134,7 +146,12 @@ header .navbar{
 #solucoes h1{
     font-family: lato-bold, sans-serif;
     color: #d02b2f;
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+#solucoes p span{
+    font-family: lato-bold, sans-serif;
+    color: #242f36;
 }
 
 #solucoes h5{
@@ -241,7 +258,7 @@ header .navbar{
 #clientes h1{
     font-family: lato-bold, sans-serif;
     color: #d02b2f;
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 #clientes p{
@@ -397,7 +414,7 @@ background: #d02b2f;
 #contato h1{
     font-family: lato-bold, sans-serif;
     color: #d02b2f;
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 #contato a{
@@ -489,4 +506,47 @@ footer .footer-map-titulo{
 
 .footer-logo, .footer-text, .footer-direitos{
     margin: 2rem 0;
+}
+
+/* ==========================================| REDES SOCIAIS |========================================== */
+
+#redesSociais{
+    z-index: 1;
+}
+
+#redesSociais a {
+    position: fixed; /* Position them relative to the browser window */
+    left: -7.5rem; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 0.5rem;
+    width: 10rem; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    text-align: right;
+}
+
+#redesSociais a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#redesSociais a i{
+    width: 2rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+}
+
+#linkedin {
+    bottom: 30%;
+    background-color: #282828;
+}
+
+#facebook {
+    bottom: 25%;
+    background-color: #282828 /* Light Black */
+}
+
+#twitter {
+    bottom: 20%;
+    background-color: #282828 /* Light Black */
 }

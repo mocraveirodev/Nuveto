@@ -22,24 +22,22 @@
 /* ==========================================| BANNER |========================================== */
 
 @media only screen and (max-width: 992px) {
-    .banner-text .banner-bottom{
-        width: 100%;
-        margin-top: 3rem;
+    .banner-text{
+        margin: 20%;
     }
 }
 @media only screen and (max-width: 768px) {
-    .banner-text p{
-        font-size: 2rem;
-        width: 100%;
-    }
-
-    .banner-text .banner-yellow{
-        font-size: 3rem;
+    .banner-text{
+        margin: 25% 10%;
     }
 }
 @media only screen and (max-width: 576px) {
-    .banner-text .banner-bottom{
-        font-size: 1rem;
+    .banner-text{
+        margin: 40% 3%;
+    }
+
+    .banner-text .banner-yellow{
+        font-size: 2rem;
     }
 }
 
@@ -140,4 +138,16 @@
     .footer-redes li{
         margin: 0 1rem;
     }
+}
+
+/* ==========================================| REDES SOCIAIS |========================================== */
+
+@media only screen and (max-width: 992px) {
+    
+}
+@media only screen and (max-width: 768px) {
+    
+}
+@media only screen and (max-width: 576px) {
+    
 }
