@@ -199,7 +199,6 @@ header .navbar{
 
 #cases{
     background-color: #e9e9e9;
-    /* height: 80vh; */
 }
 
 .cases-box{
@@ -229,6 +228,12 @@ header .navbar{
     width: 80%;
     height: 3rem;
     margin-bottom: 2rem;
+}
+
+.cases-wiz{
+    width: 10rem;
+    height: 6rem;
+    margin-top: -1rem;
 }
 
 .cases-box h5{
@@ -414,7 +419,7 @@ background: #d02b2f;
 #contato h1{
     font-family: lato-bold, sans-serif;
     color: #d02b2f;
-    padding-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 #contato a{
@@ -427,16 +432,12 @@ background: #d02b2f;
 }
 
 #contato .container{
-    margin-top: 5rem;
-    margin-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 #contato .formulario{
     padding: 0 2rem 0 9rem;
-}
-
-#contato .titulo{
-    margin-bottom: 2rem;
 }
 
 #contato input{
@@ -456,6 +457,17 @@ background: #d02b2f;
 
 #contato button img{
     margin-right: 0.5rem;
+}
+
+/* ==========================================| MODAL CONTATO |========================================== */
+
+#modal-contato .modal h3{
+    font-family: lato-bold, sans-serif;
+    color: #d02b2f;
+}
+
+#modal-contato .modal p{
+    color: #242f36;
 }
 
 /* ==========================================| FOOTER |========================================== */

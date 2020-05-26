@@ -1,16 +1,5 @@
-<?php
-    include_once('views/includes/envio.php');
-
-    if(isset($_SESSION['mailresult'])){
-        $mailresult = json_encode($_SESSION['mailresult']);
-    }
-    if(isset($_SESSION['ErrorInfo'])){
-        $ErrorInfo = json_encode($_SESSION['ErrorInfo']);
-    }
-?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +12,9 @@
     <link rel="shortcut icon" href="views/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="views/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="views/css/style.css">
     <link rel="stylesheet" href="views/css/m-style.css">
+    <script src="https://kit.fontawesome.com/3e0edc3a21.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -37,9 +26,9 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a data-scroll class="nav-link" href="#solucoes">Quem Somos</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a data-scroll class="nav-link" href="#solucoes">O que Fazemos</a>
                         </li>
@@ -61,18 +50,13 @@
                     </ul>
                     <ul class="navbar-nav nav-redes">
                         <li class="nav-item">
-                            <a target="_blank" class="nav-link" href="https://www.linkedin.com/company/nuveto/">
-                                <i class="fab fa-2x fa-linkedin-in"></i>
+                            <a class="nav-link" href="mailto:marketing@nuveto.com.br">
+                                <i class="far fa-envelope mr-2"></i> marketing@nuveto.com.br
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a target="_blank" class="nav-link" href="https://www.facebook.com/nuveto/">
-                                <i class="fab fa-2x fa-facebook-square"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a target="_blank" class="nav-link" href="https://twitter.com/nuvetobr">
-                                <i class="fab fa-2x fa-twitter"></i>
+                            <a class="nav-link" href="tel:+551142008282">
+                                <i class="fas fa-phone-alt mr-2"></i> +55 (11) 4200-8282
                             </a>
                         </li>
                     </ul>
@@ -84,7 +68,7 @@
         <section id="banner">
             <div id="carouselBanner" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item nuveto active">
+                    <div class="carousel-item nuveto">
                         <div class="banner-text">
                             <p class="text-left">A</p>
                             <p class="banner-yellow text-left">velocidade do mundo</p>
@@ -94,7 +78,7 @@
                             <a data-scroll href="#contato" class="btn btn-success btn-padrao mt-5">Saiba mais</a>
                         </div>
                     </div>
-                    <div class="carousel-item covid">
+                    <div class="carousel-item covid active">
                         <div class="banner-text">
                             <p class="text-left">Programa</p>
                             <p class="banner-yellow text-left">SOS COVID-19</p>
@@ -205,14 +189,21 @@
                     <img src="views/img/sumup-logo.png" alt="Logo Sumup" class="cases-sumup">
                     <h5>Case Sumup</h5>
                     <p>SumUp aumenta produtividade de atendentes em até 35%</p>
-                    <p>Com adoção de solução de Contact Center na Nuvem e implementação da Nuveto, 15% das chamadas são resolvidas pela URA antes de chegarem aos operadores e 20% são direcionadas ao WhatsApp</p>
+                    <p>Com adoção de solução de Contact Center na Nuvem e implementação da Nuveto, 15% das chamadas são resolvidas pela URA antes de chegarem aos operadores e 20% são direcionadas ao WhatsApp.</p>
                     <a data-scroll href="#contato" class="btn btn-success mt-4">Saiba mais</a>
                 </div>
                 <div class="cases-card">
                     <img src="views/img/sharecare.jpg" alt="Logo Sharecare" class="cases-share">
                     <h5>Case Sharecare</h5>
-                    <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus</p>
+                    <p>Em apenas 24 horas Nuveto coloca equipe de atendimento da Sharecare para trabalhar à distância</p>
+                    <p>A empresa foi umas das primeiras a adotar o programa da Nuveto “SOS Covid-19”, baseado na tecnologia da Five9.</p>
+                    <a data-scroll href="#contato" class="btn btn-success mt-4">Saiba mais</a>
+                </div>
+                <div class="cases-card">
+                    <img src="views/img/logo_wiz.png" alt="Logo Sharecare" class="cases-wiz">
+                    <h5>Case Wiz</h5>
+                    <p>Wiz utiliza plataforma de Cloud Contact Center da Nuveto para garantir continuidade de negócios</p>
+                    <p>A empresa colocou 50% dos profissionais trabalhando em Home Office em 6 dias e ainda conseguiu um crescimento de 7% na satisfação de seus clientes, mesmo com aumento de acessos.</p>
                     <a data-scroll href="#contato" class="btn btn-success mt-4">Saiba mais</a>
                 </div>
             </div>
@@ -280,7 +271,7 @@
                 <div class="row">
                     <div class="col-md-8 formulario">
                         <h1>Fale Conosco</h1>
-                        <p>Entre agora mesmo em contato com um dos consultores da Nuveto, esclareça suas dúvidas e conheça o portifólio do Cloud Solution Center | Nuveto</p>
+                        <p>Entre agora mesmo em contato com um dos consultores da Nuveto, esclareça suas dúvidas e conheça nossos cases de sucesso além do portifólio do Cloud Solution Center | Nuveto</p>
                         <!-- <form id="mailform" name="mailform"> -->
                         <form action="/nuveto/contato" method="post" enctype="multipart/form-data">
                             <!-- <div class="form-group">
@@ -334,6 +325,7 @@
                         <div class="modal-body">
                             <h3>Pronto!</h3>
                             <p>Em breve nossos especialistas irão entrar em contato para dar mais informações.</p>
+                            <!-- <p><?=$_SESSION['mailresult']?></p> -->
                             <a class="btn btn-success btn-padrao" data-dismiss="modal" aria-label="Fechar">OK</a>
                         </div>
                     </div>
@@ -346,7 +338,7 @@
                         <div class="modal-body">
                             <h3>Erro!</h3>
                             <p>Houve um erro enviando o email. Tente de novo mais tarde!</p>
-                            <p><?=$ErrorInfo?></p>
+                            <!-- <p><?=$_SESSION['ErrorInfo']?></p> -->
                             <a class="btn btn-success btn-padrao" data-dismiss="modal" aria-label="Fechar">OK</a>
                         </div>
                     </div>
@@ -376,10 +368,10 @@
                             <nav>
                                 <ul>
                                     <li><a data-scroll href="" class="footer-map-titulo">Empresa</a></li>
-                                    <li><a data-scroll href="">Quem Somos</a></li>
+                                    <!-- <li><a data-scroll href="">Quem Somos</a></li> -->
                                     <li><a data-scroll href="">O que Fazemos</a></li>
-                                    <li><a data-scroll href="">Por que a Nuvem?</a></li>
-                                    <li><a data-scroll href="">Imprensa</a></li>
+                                    <!-- <li><a data-scroll href="">Por que a Nuvem?</a></li>
+                                    <li><a data-scroll href="">Imprensa</a></li> -->
                                     <li><a data-scroll href="">Contato</a></li>
                                 </ul>
                             </nav>
@@ -390,8 +382,8 @@
                                     <li><a data-scroll href="" class="footer-map-titulo">Soluções</a></li>
                                     <li><a data-scroll href="">Cases de Sucesso</a></li>
                                     <li><a data-scroll href="">Clientes</a></li>
-                                    <li><a data-scroll href="">Parceiros</a></li>
-                                    <li><a data-scroll href="">Blog</a></li>
+                                    <!-- <li><a data-scroll href="">Parceiros</a></li>
+                                    <li><a data-scroll href="">Blog</a></li> -->
                                 </ul>
                             </nav>
                         </div>
@@ -424,16 +416,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./views/js/smoothscroll.js"></script>
-    <script>
-        let mailresult = "<?=$mailresult?>";
-        let ErrorInfo = "<?=$ErrorInfo?>";
-        
-        if(mailresult != ""){
-            $('#modalOk').modal('show');
+    <?php
+        if($_SESSION['mailresult'] != ""){
+            $_SESSION['mailresult'] = "";
+            echo "<script>$('#modalOk').modal('show');</script>";
         }
-        if(ErrorInfo != ""){
-            $('#modalErro').modal('show');
+
+        if($_SESSION['ErrorInfo'] != ""){
+            $_SESSION['ErrorInfo'] = "";
+            echo "<script>$('#modalErro').modal('show');</script>";
         }
-    </script>
+    ?>
 </body>
 </html>

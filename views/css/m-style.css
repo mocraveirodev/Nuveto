@@ -140,14 +140,19 @@
     }
 }
 
-/* ==========================================| REDES SOCIAIS |========================================== */
+/* ==========================================| CONTATO |========================================== */
 
 @media only screen and (max-width: 992px) {
     
 }
 @media only screen and (max-width: 768px) {
-    
+    #contato .formulario{
+        padding: 0 2rem;
+    }
 }
 @media only screen and (max-width: 576px) {
-    
+    #contato .localizacao{
+        margin-top: 3rem;
+        padding: 0 3rem;
+    }
 }
