@@ -427,13 +427,21 @@ background: #d02b2f;
     color: #d02b2f;
 }
 
-#contato p{
+#contato p, #contato small{
     color: #242f36;
 }
 
+#contato small{
+    margin-left: 3rem;
+}
+
+#contato .loc{
+    font-family: lato-bold, sans-serif;
+}
+
 #contato .container{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 #contato .formulario{
@@ -480,6 +488,10 @@ footer{
 footer .footer-logo{
     width: 8rem;
     height: 3rem;
+}
+
+footer .loc{
+    font-family: lato-bold, sans-serif;
 }
 
 footer .row{

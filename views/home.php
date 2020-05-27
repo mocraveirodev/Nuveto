@@ -273,7 +273,7 @@
                         <h1>Fale Conosco</h1>
                         <p>Entre agora mesmo em contato com um dos consultores da Nuveto, esclareça suas dúvidas e conheça nossos cases de sucesso além do portifólio do Cloud Solution Center | Nuveto</p>
                         <!-- <form id="mailform" name="mailform"> -->
-                        <form action="/nuveto/contato" method="post" enctype="multipart/form-data">
+                        <form action="/?contato" method="post" enctype="multipart/form-data">
                             <!-- <div class="form-group">
                                 <input value="marketing@nuveto.com.br" name="toemail" type="text" hidden />
                             </div> -->
@@ -281,33 +281,32 @@
                                 <input value="marketing@nuveto.com.br" name="from" type="text" hidden />
                             </div> -->
                             <div class="form-group">
-                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome" required/>
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome*" required/>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail" required/>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail*" required/>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Seu telefone" required/>
+                                <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Seu celular com DDD*" required/>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="empresa" id="empresa" placeholder="Sua empresa" required/>
+                                <input type="text" class="form-control" name="empresa" id="empresa" placeholder="Sua empresa*" required/>
                             </div>
                             <div class="form-group">
                                 <textarea class="form-control" id="message" name="message" rows="4" placeholder="Sua mensagem"></textarea>
                             </div>
                             <button type="submit" class="btn btn-padrao btn-success"><img src="views/img/paper_plane-512.svg" alt="Enviar"></img> Enviar contato</button>
+                            <small>*Campo Obrigatório</small>
                         </form>
                     </div>
                     <div class="col-md-4 localizacao">
                         <h1>Onde estamos</h1>
-                        <p>SÃO PAULO - SP - BRASIL</p>
-                        <br>
-                        <p>Av. Roque Petroni Jr., 850</p>
+                        <p class="loc">SÃO PAULO - SP - BRASIL</p>
+                        <p>Av. Roque Petroni Júnior, 850</p>
                         <p>10º andar, Torre Jaceru</p>
-                        <p>Jd. das Acácias - 04707-000</p>
+                        <p>Jardim das Acácias - CEP: 04707-000</p>
                         <br>
-                        <p>BOGOTÁ - COLÔMBIA</p>
-                        <br>
+                        <p class="loc">BOGOTÁ - COLÔMBIA</p>
                         <p>Carrera 7 #116-50</p>
                         <p>Piso 6 - Oficina 6-127</p>
                         <br>
@@ -325,7 +324,6 @@
                         <div class="modal-body">
                             <h3>Pronto!</h3>
                             <p>Em breve nossos especialistas irão entrar em contato para dar mais informações.</p>
-                            <!-- <p><?=$_SESSION['mailresult']?></p> -->
                             <a class="btn btn-success btn-padrao" data-dismiss="modal" aria-label="Fechar">OK</a>
                         </div>
                     </div>
@@ -338,7 +336,6 @@
                         <div class="modal-body">
                             <h3>Erro!</h3>
                             <p>Houve um erro enviando o email. Tente de novo mais tarde!</p>
-                            <!-- <p><?=$_SESSION['ErrorInfo']?></p> -->
                             <a class="btn btn-success btn-padrao" data-dismiss="modal" aria-label="Fechar">OK</a>
                         </div>
                     </div>
@@ -352,14 +349,12 @@
                 <img src="views/img/LogoNuvetoBrancaVer.png" class="footer-logo" alt="Logo Nuveto">
                 <div class="footer-text">
                     <div class="footer-endereco">
-                        <p>SÃO PAULO - SP - BRASIL</p>
-                        <br>
-                        <p>Av. Roque Petroni Jr., 850</p>
+                        <p class="loc">SÃO PAULO - SP - BRASIL</p>
+                        <p>Av. Roque Petroni Júnior, 850</p>
                         <p>10º andar, Torre Jaceru</p>
-                        <p>Jd. das Acácias - 04707-000</p>
+                        <p>Jardim das Acácias - CEP: 04707-000</p>
                         <br>
-                        <p>BOGOTÁ - COLÔMBIA</p>
-                        <br>
+                        <p class="loc">BOGOTÁ - COLÔMBIA</p>
                         <p>Carrera 7 #116-50</p>
                         <p>Piso 6 - Oficina 6-127</p>
                     </div>
@@ -417,14 +412,18 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./views/js/smoothscroll.js"></script>
     <?php
-        if($_SESSION['mailresult'] != ""){
-            $_SESSION['mailresult'] = "";
-            echo "<script>$('#modalOk').modal('show');</script>";
+        if(isset($_SESSION['mailresult'])){
+            if($_SESSION['mailresult'] != ""){
+                $_SESSION['mailresult'] = "";
+                echo "<script>$('#modalOk').modal('show');</script>";
+            }
         }
 
-        if($_SESSION['ErrorInfo'] != ""){
-            $_SESSION['ErrorInfo'] = "";
-            echo "<script>$('#modalErro').modal('show');</script>";
+        if(isset($_SESSION['ErrorInfo'])){
+            if($_SESSION['ErrorInfo'] != ""){
+                $_SESSION['ErrorInfo'] = "";
+                echo "<script>$('#modalErro').modal('show');</script>";
+            }
         }
     ?>
 </body>

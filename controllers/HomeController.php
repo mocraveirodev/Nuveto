@@ -66,7 +66,7 @@
                 $_SESSION['ErrorInfo'] = $mail->ErrorInfo;
             }
 
-            header('Location:/nuveto/home#contato');
+            header('Location:/?home#contato');
         }
     }
 ?>
