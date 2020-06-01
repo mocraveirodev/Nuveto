@@ -71,9 +71,9 @@
                     <div class="carousel-item nuveto">
                         <div class="banner-text">
                             <p class="text-left">A</p>
-                            <p class="banner-yellow text-left">velocidade do mundo</p>
-                            <p class="">atual agora também no</p>
-                            <p class="banner-yellow text-right">seu Contact Center!</p>
+                            <p class="banner-yellow text-left">velocidade do mundo atual</p>
+                            <p class="">agora também no seu </p>
+                            <p class="banner-yellow text-right">Contact Center!</p>
                             <p class="banner-bottom">A Nuveto te oferece tecnologias em nuvem para diferenciar a sua marca. Esqueça limitações, deixe que a sua criatividade seja o limite para encantar seus clientes.</p>
                             <a data-scroll href="#contato" class="btn btn-success btn-padrao mt-5">Saiba mais</a>
                         </div>
@@ -88,6 +88,14 @@
                         </div>
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselBanner" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselBanner" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </section>
         <section id="beneficios">
@@ -101,7 +109,7 @@
                 <div class="beneficios-card">
                     <img src="views/img/bn-02.svg" alt="Atendimento ao Cliente">
                     <h4>Atendimento ao Cliente</h4>
-                    <p>Seu cliente no centro de seus negócios. Permita interagir no canal de sua preferência e mantenha uma visão unificada da jornada do cliente em todos os pontos de contato.</p>
+                    <p>Seu cliente no centro de seus negócios: permite interagir no canal de sua preferência e ter uma visão unificada da jornada do cliente em todos os pontos de contato.</p>
                 </div>
                 <div class="beneficios-card">
                     <img src="views/img/bn-03.svg" alt="Cobrança">
@@ -113,7 +121,8 @@
         <section id="solucoes">
             <div class="container">
                 <h1>Soluções</h1>
-                <p class="mt-5">Somos especializados em soluções inovadoras em nuvem com foco em elevar a satisfação do cliente, aumentar a eficiência do atendimento por meio de automações e prover informações que facilitem a tomada de decisões e a governança da operação.</p>
+                <p class="mt-5">A Nuveto é a representante exclusiva da Five9 e já está presente em mais de 1.000 posições de atendimento no país.</p>
+                <p class="mt-3">Somos especializados em soluções inovadoras em nuvem com foco em elevar a satisfação do cliente, aumentar a eficiência do atendimento por meio de automações e prover informações que facilitem a tomada de decisões e a governança da operação.</p>
                 <div class="solucoes-box">
                     <div class="solucoes-card">
                         <h5><img src="views/img/sl-01.svg" alt="Omnichannel">Omnichannel</h5>
@@ -186,21 +195,21 @@
         <section id="cases">
             <div class="cases-box">
                 <div class="cases-card">
-                    <img src="views/img/sumup-logo.png" alt="Logo Sumup" class="cases-sumup">
-                    <h5>Case Sumup</h5>
+                    <img src="views/img/sumup-logo para o site.png" alt="Logo SumUp" class="cases-logo">
+                    <h5>Case SumUp</h5>
                     <p>SumUp aumenta produtividade de atendentes em até 35%</p>
                     <p>Com adoção de solução de Contact Center na Nuvem e implementação da Nuveto, 15% das chamadas são resolvidas pela URA antes de chegarem aos operadores e 20% são direcionadas ao WhatsApp.</p>
                     <a data-scroll href="#contato" class="btn btn-success mt-4">Saiba mais</a>
                 </div>
                 <div class="cases-card">
-                    <img src="views/img/sharecare.jpg" alt="Logo Sharecare" class="cases-share">
+                    <img src="views/img/logo sharecare - logo ppara o site.png" alt="Logo Sharecare" class="cases-logo">
                     <h5>Case Sharecare</h5>
                     <p>Em apenas 24 horas Nuveto coloca equipe de atendimento da Sharecare para trabalhar à distância</p>
                     <p>A empresa foi umas das primeiras a adotar o programa da Nuveto “SOS Covid-19”, baseado na tecnologia da Five9.</p>
                     <a data-scroll href="#contato" class="btn btn-success mt-4">Saiba mais</a>
                 </div>
                 <div class="cases-card">
-                    <img src="views/img/logo_wiz.png" alt="Logo Sharecare" class="cases-wiz">
+                    <img src="views/img/wiz logo site.png" alt="Logo Wiz" class="cases-logo">
                     <h5>Case Wiz</h5>
                     <p>Wiz utiliza plataforma de Cloud Contact Center da Nuveto para garantir continuidade de negócios</p>
                     <p>A empresa colocou 50% dos profissionais trabalhando em Home Office em 6 dias e ainda conseguiu um crescimento de 7% na satisfação de seus clientes, mesmo com aumento de acessos.</p>
@@ -362,21 +371,21 @@
                         <div class="footer-map-empresa">
                             <nav>
                                 <ul>
-                                    <li><a data-scroll href="" class="footer-map-titulo">Empresa</a></li>
+                                    <li><a data-scroll href="#banner" class="footer-map-titulo">Empresa</a></li>
                                     <!-- <li><a data-scroll href="">Quem Somos</a></li> -->
-                                    <li><a data-scroll href="">O que Fazemos</a></li>
+                                    <li><a data-scroll href="#solucoes">O que Fazemos</a></li>
                                     <!-- <li><a data-scroll href="">Por que a Nuvem?</a></li>
                                     <li><a data-scroll href="">Imprensa</a></li> -->
-                                    <li><a data-scroll href="">Contato</a></li>
+                                    <li><a data-scroll href="#contato">Contato</a></li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="footer-map-solucoes">
                             <nav>
                                 <ul>
-                                    <li><a data-scroll href="" class="footer-map-titulo">Soluções</a></li>
-                                    <li><a data-scroll href="">Cases de Sucesso</a></li>
-                                    <li><a data-scroll href="">Clientes</a></li>
+                                    <li><a data-scroll href="#solucoes" class="footer-map-titulo">Soluções</a></li>
+                                    <li><a data-scroll href="#cases">Cases de Sucesso</a></li>
+                                    <li><a data-scroll href="#clientes">Clientes</a></li>
                                     <!-- <li><a data-scroll href="">Parceiros</a></li>
                                     <li><a data-scroll href="">Blog</a></li> -->
                                 </ul>

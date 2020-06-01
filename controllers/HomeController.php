@@ -52,7 +52,7 @@
                 $mail->SMTPAuth = false;
 
                 $mail->setFrom($from, 'Contato - Nuveto');
-                $mail->addAddress($toemail);
+                $mail->addAddress($toemail, 'Contato - Nuveto');
 
                 $mail->isHTML(true);
                 $mail->Subject = $subject;
@@ -66,7 +66,7 @@
                 $_SESSION['ErrorInfo'] = $mail->ErrorInfo;
             }
 
-            header('Location:/?home#contato');
+            header('Location:/#contato');
         }
     }
 ?>

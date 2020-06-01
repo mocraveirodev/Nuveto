@@ -37,7 +37,7 @@
     }
 
     .banner-text .banner-yellow{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -103,23 +103,9 @@
     .cases-card{
         width: 40%;
     }
-
-    .cases-sumup{
-        width: 70%;
-        height: 4rem;
-        margin-bottom: 2rem;
-    }
-    
-    .cases-share{
-        width: 90%;
-        height: 3rem;
-        margin-bottom: 2rem;
-    }
 }
 @media only screen and (max-width: 768px) {
-    .cases-sumup{
-        width: 80%;
-    }
+    
 }
 @media only screen and (max-width: 576px) {
     .cases-box{
@@ -154,5 +140,9 @@
     #contato .localizacao{
         margin-top: 3rem;
         padding: 0 3rem;
+    }
+
+    #contato small{
+        margin-left: 1rem;
     }
 }
