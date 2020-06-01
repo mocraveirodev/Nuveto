@@ -121,7 +121,7 @@
         <section id="solucoes">
             <div class="container">
                 <h1>Soluções</h1>
-                <p class="mt-5">A Nuveto é a representante exclusiva da Five9 e já está presente em mais de 1.000 posições de atendimento no país.</p>
+                <p class="mt-5">A Nuveto é a representante exclusiva da Five9 e já está presente em milhares de posições de atendimento no país.</p>
                 <p class="mt-3">Somos especializados em soluções inovadoras em nuvem com foco em elevar a satisfação do cliente, aumentar a eficiência do atendimento por meio de automações e prover informações que facilitem a tomada de decisões e a governança da operação.</p>
                 <div class="solucoes-box">
                     <div class="solucoes-card">
@@ -193,8 +193,49 @@
             </div>
         </section>
         <section id="cases">
-            <div class="cases-box">
-                <div class="cases-card">
+            <div class="container">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="views/img/sumup-logo para o site.png" alt="Logo SumUp" class="card-img-top">
+                            <h5 class="card-title">Case SumUp</h5>
+                            <h6 class="card-subtitle">SumUp aumenta produtividade de atendentes em até 35%</h6>
+                            <p class="card-text">Com adoção de solução de Contact Center na Nuvem e implementação da Nuveto, 15% das chamadas são resolvidas pela URA antes de chegarem aos operadores e 20% são direcionadas ao WhatsApp.</p>
+                        </div>
+                        <div class="card-footer">
+                            <img src="views/img/five9fundobranco.jpeg" alt="Logo Five9" class="logo-five9">
+                            <a data-scroll href="#contato" class="btn btn-success mt-4">Saiba mais</a>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="views/img/logo sharecare - logo ppara o site.png" alt="Logo Sharecare" class="card-img-top">
+                            <h5 class="card-title">Case Sharecare</h5>
+                            <h6 class="card-subtitle">Em apenas 24 horas Nuveto coloca equipe de atendimento da Sharecare para trabalhar à distância</h6>
+                            <p class="card-text">A empresa foi umas das primeiras a adotar o programa da Nuveto “SOS Covid-19”, baseado na tecnologia da Five9.</p>
+                        </div>
+                        <div class="card-footer">
+                            <img src="views/img/five9fundobranco.jpeg" alt="Logo Five9" class="logo-five9">
+                            <a data-scroll href="#contato" class="btn btn-success mt-4">Saiba mais</a>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="views/img/wiz logo site.png" alt="Logo Wiz" class="card-img-top">
+                            <h5 class="card-title">Case Wiz</h5>
+                            <h6 class="card-subtitle">Wiz utiliza plataforma de Cloud Contact Center da Nuveto para garantir continuidade de negócios</h6>
+                            <p class="card-text">A empresa colocou 50% dos profissionais trabalhando em Home Office em 6 dias e ainda conseguiu um crescimento de 7% na satisfação de seus clientes, mesmo com aumento de acessos.</p>
+                        </div>
+                        <div class="card-footer">
+                            <img src="views/img/five9fundobranco.jpeg" alt="Logo Five9" class="logo-five9">
+                            <a data-scroll href="#contato" class="btn btn-success mt-4">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- <div class="cases-card">
                     <img src="views/img/sumup-logo para o site.png" alt="Logo SumUp" class="cases-logo">
                     <h5>Case SumUp</h5>
                     <p>SumUp aumenta produtividade de atendentes em até 35%</p>
@@ -214,8 +255,7 @@
                     <p>Wiz utiliza plataforma de Cloud Contact Center da Nuveto para garantir continuidade de negócios</p>
                     <p>A empresa colocou 50% dos profissionais trabalhando em Home Office em 6 dias e ainda conseguiu um crescimento de 7% na satisfação de seus clientes, mesmo com aumento de acessos.</p>
                     <a data-scroll href="#contato" class="btn btn-success mt-4">Saiba mais</a>
-                </div>
-            </div>
+                </div> -->
         </section>
         <section id="clientes">
             <div class="container pt-5">

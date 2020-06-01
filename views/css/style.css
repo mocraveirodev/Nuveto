@@ -201,6 +201,52 @@ header .navbar{
     background-color: #e9e9e9;
 }
 
+#cases .card{
+    margin: 3rem 1.5rem;
+}
+
+#cases .card-deck{
+    display: flex;
+}
+
+#cases .card-img-top{
+    margin-bottom: 2rem;
+}
+
+#cases .card-title{
+    color: #d02b2f;
+    font-family: lato-bold, sans-serif;
+    margin-bottom: 2rem;
+}
+
+#cases .card-subtitle{
+    color: #303e48;
+    margin-bottom: 2rem;
+}
+
+#cases .card-text{
+    color: #303e48;
+}
+
+#cases .card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #ffffff;
+    border: none;
+    padding: 0;
+}
+
+#cases .logo-five9{
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+}
+
+#cases .btn{
+    border-radius: 0;
+}
+
 .cases-box{
     display: flex;
     flex-direction: row;
@@ -233,12 +279,6 @@ header .navbar{
 .cases-box p{
     color: #303e48;
     padding-right: 1rem;
-}
-
-.cases-card .btn{
-    align-self: flex-end;
-    justify-self: self-end;
-    border-radius: 0;
 }
 
 /* ==========================================| CLIENTES |========================================== */

@@ -86,7 +86,7 @@
     .solucoes-box{
         justify-content: center;
     }
-
+    
     .solucoes-card{
         width: 80%;
     }
@@ -104,17 +104,20 @@
         width: 40%;
     }
 }
+
 @media only screen and (max-width: 768px) {
-    
+    #cases .card{
+        margin: 3rem 0.5rem;
+    }
 }
+
 @media only screen and (max-width: 576px) {
-    .cases-box{
-        flex-direction: column;
-        align-items: center;
+    #cases .card{
+        margin: 3rem 3rem;
     }
 
-    .cases-card{
-        width: 70%;
+    #cases .card-deck{
+        flex-flow: column wrap;
     }
 }
 
