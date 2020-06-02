@@ -121,6 +121,7 @@
         <section id="solucoes">
             <div class="container">
                 <h1>Soluções</h1>
+                <img src="views/img/logofive9fundotransparente.png" alt="Logo Five9" class="logo-five9">
                 <p class="mt-5">A Nuveto é a representante exclusiva da Five9 e já está presente em milhares de posições de atendimento no país.</p>
                 <p class="mt-3">Somos especializados em soluções inovadoras em nuvem com foco em elevar a satisfação do cliente, aumentar a eficiência do atendimento por meio de automações e prover informações que facilitem a tomada de decisões e a governança da operação.</p>
                 <div class="solucoes-box">

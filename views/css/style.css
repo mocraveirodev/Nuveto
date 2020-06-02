@@ -141,12 +141,21 @@ header .navbar{
 
 #solucoes{
     background-color: #f8f8f9;
+    position: relative;
 }
 
 #solucoes h1{
     font-family: lato-bold, sans-serif;
     color: #d02b2f;
     padding-top: 1.5rem;
+}
+
+#solucoes .logo-five9{
+    width: 10rem;
+    height: 5rem;
+    position: absolute;
+    top: 2rem;
+    right: 10rem;
 }
 
 #solucoes p span{

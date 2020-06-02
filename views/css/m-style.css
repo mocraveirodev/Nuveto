@@ -76,6 +76,13 @@
 
 /* ==========================================| SOLUÇÕES |========================================== */
 
+@media only screen and (max-width: 992px) {
+    #solucoes .logo-five9{
+        top: 1rem;
+        right: 5rem;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .descubra{
         padding: 3rem 10%;
@@ -83,6 +90,12 @@
 }
 
 @media only screen and (max-width: 576px) {
+    #solucoes .logo-five9{
+        width: 7rem;
+        height: 4rem;
+        right: 1rem;
+    }
+
     .solucoes-box{
         justify-content: center;
     }
