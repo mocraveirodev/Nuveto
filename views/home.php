@@ -9,12 +9,12 @@
     <meta name="keywords" content="Nuveto,Atendimento ao Cliente,CX,Customer Experience,Relacionamento ao cliente,Cloud,Cloudcomputing,CallCenter,Call-Center,Cloud Solution Center">
     <meta name="author" content="Monica Craveiro">
     <title>Nuveto - Cloud Solution Center</title>
+    <script src="https://kit.fontawesome.com/3e0edc3a21.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="views/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="views/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="views/css/style.css">
     <link rel="stylesheet" href="views/css/m-style.css">
-    <script src="https://kit.fontawesome.com/3e0edc3a21.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -26,12 +26,12 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
                     <ul class="navbar-nav">
-                        <!-- <li class="nav-item">
-                            <a data-scroll class="nav-link" href="#solucoes">Quem Somos</a>
-                        </li> -->
                         <li class="nav-item">
-                            <a data-scroll class="nav-link" href="#solucoes">O que Fazemos</a>
+                            <a data-scroll class="nav-link" href="#solucoes">Quem Somos</a>
                         </li>
+                        <!-- <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#solucoes">O que Fazemos</a>
+                        </li> -->
                         <!-- <li class="nav-item">
                             <a data-scroll class="nav-link" href="#">Por que a Nuvem?</a>
                         </li> -->
@@ -40,6 +40,9 @@
                         </li>
                         <li class="nav-item">
                             <a data-scroll class="nav-link" href="#clientes">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="/?news">Notícias</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a data-scroll class="nav-link" href="#">Parceiros</a>
@@ -323,13 +326,16 @@
                         <h1>Fale Conosco</h1>
                         <p>Entre agora mesmo em contato com um dos consultores da Nuveto, esclareça suas dúvidas e conheça nossos cases de sucesso além do portifólio do Cloud Solution Center | Nuveto</p>
                         <!-- <form id="mailform" name="mailform"> -->
-                        <form action="/?contato" method="post" enctype="multipart/form-data">
-                            <!-- <div class="form-group">
+                        <form action="/?email" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
                                 <input value="marketing@nuveto.com.br" name="toemail" type="text" hidden />
-                            </div> -->
-                            <!-- <div class="form-group">
-                                <input value="marketing@nuveto.com.br" name="from" type="text" hidden />
-                            </div> -->
+                            </div>
+                            <div class="form-group">
+                                <input value="Contato Site | Nuveto" name="subject" type="text" hidden />
+                            </div>
+                            <div class="form-group">
+                                <input value="contato@nuveto.com.br" name="from" type="text" hidden />
+                            </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome*" required/>
                             </div>
@@ -413,8 +419,9 @@
                             <nav>
                                 <ul>
                                     <li><a data-scroll href="#banner" class="footer-map-titulo">Empresa</a></li>
-                                    <!-- <li><a data-scroll href="">Quem Somos</a></li> -->
-                                    <li><a data-scroll href="#solucoes">O que Fazemos</a></li>
+                                    <li><a data-scroll href="#solucoes">Quem Somos</a></li>
+                                    <li><a data-scroll href="/?news">Notícias</a></li>
+                                    <!-- <li><a data-scroll href="#solucoes">O que Fazemos</a></li> -->
                                     <!-- <li><a data-scroll href="">Por que a Nuvem?</a></li>
                                     <li><a data-scroll href="">Imprensa</a></li> -->
                                     <li><a data-scroll href="#contato">Contato</a></li>
@@ -464,15 +471,15 @@
     <?php
         if(isset($_SESSION['mailresult'])){
             if($_SESSION['mailresult'] != ""){
-                $_SESSION['mailresult'] = "";
                 echo "<script>$('#modalOk').modal('show');</script>";
+                unset($_SESSION['mailresult']);
             }
         }
 
         if(isset($_SESSION['ErrorInfo'])){
             if($_SESSION['ErrorInfo'] != ""){
-                $_SESSION['ErrorInfo'] = "";
                 echo "<script>$('#modalErro').modal('show');</script>";
+                unset($_SESSION['ErrorInfo']);
             }
         }
     ?>

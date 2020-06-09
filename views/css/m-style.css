@@ -36,7 +36,7 @@
         margin: 40% 3%;
     }
 
-    .banner-text .banner-yellow{
+    .banner-text .banner-yellow, .banner-news .banner-yellow{
         font-size: 1.5rem;
     }
 }
@@ -160,5 +160,29 @@
 
     #contato small{
         margin-left: 1rem;
+    }
+}
+
+/* ==========================================| CONTATO |========================================== */
+
+@media only screen and (max-width: 992px) {
+    
+}
+@media only screen and (max-width: 768px) {
+    #news .noticia{
+        font-size: 1rem;
+    }
+
+    #news .noticia-small{
+        display: none;
+    }
+
+    #news .texto-noticia{
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 576px) {
+    #news .texto-noticia{
+        display: none;
     }
 }

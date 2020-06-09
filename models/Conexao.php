@@ -3,7 +3,7 @@
     class Conexao{
         private $host = 'mysql:host=50.62.209.154;dbname=nuveto;port=3306'; //Caminho do BD
         private $user = 'user_nuveto'; //Username
-        private $pass = ''; //senha
+        private $pass = '4*ennR15'; //senha
         // private $host = 'mysql:host=localhost;dbname=mex;port=3306'; //Caminho do BD
         // private $user = 'root'; //Username
         // private $pass = ''; //senha
