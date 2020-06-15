@@ -191,6 +191,7 @@ header .navbar{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: fit-content;
 }
 
 .solucoes-card{

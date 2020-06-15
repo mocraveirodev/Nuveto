@@ -3,3 +3,4 @@ nuveto.com.br.zip
 composer.json
 composer.lock
 /vendor
+/models/Conexao.php

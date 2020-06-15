@@ -1,6 +1,8 @@
 <?php
     session_start();
 
+    header('Content-Type: text/html; charset=UTF-8');
+
     include_once "models/Email.php";
 
     use PHPMailer\PHPMailer\PHPMailer;
@@ -65,6 +67,7 @@
                 $mail->addAddress($toemail);
 
                 $mail->isHTML(true);
+                $mail->CharSet = 'UTF-8';
                 $mail->Subject = $subject;
                 $mail->Body    = $message;
                 $mail->AltBody = $messagePlain;
