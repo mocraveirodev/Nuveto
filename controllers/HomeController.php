@@ -29,6 +29,7 @@
         private function viewHome(){
             include "views/home.php";
         }
+        
         private function viewNews(){
             include "views/news.php";
         }
