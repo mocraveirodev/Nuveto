@@ -132,7 +132,7 @@
                     header('Location:/?news');
                 break;
                 case "oportunidade@nuveto.com.br":
-                    header('Location:/?news');
+                    header('Location:/?parceiro');
                 break;
             }
         }
