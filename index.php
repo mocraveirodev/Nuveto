@@ -17,5 +17,15 @@
             $controller = new HomeController();
             $controller->acao($rotas);
         break;
+        case "parceiro":
+            include "controllers/HomeController.php";
+            $controller = new HomeController();
+            $controller->acao($rotas);
+        break;
+        case "emailparceiro":
+            include "controllers/HomeController.php";
+            $controller = new HomeController();
+            $controller->acao($rotas);
+        break;
     }
 ?>

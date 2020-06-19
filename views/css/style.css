@@ -747,3 +747,60 @@ footer .footer-map-titulo{
 .noticias .noticia-small{
     margin: 1rem 0;
 }
+
+/* ==========================================| PARCEIRO |========================================== */
+
+#parceiro .container{
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+#parceiro h1, #parceiro h5, #parceiro p{
+    color: #242f36;
+}
+
+#parceiro .logon{
+    width: 30%;
+    height: auto;
+    display: block;
+}
+
+#parceiro .distribuidor{
+    display: flex;
+    align-items: flex-end;
+}
+
+#parceiro .distribuidor p{
+    margin: 0;
+    padding: 0 1%;
+}
+
+#parceiro .logof{
+    width: 8%;
+    height: auto;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+#parceiro h1{
+    margin-top: 2rem;
+}
+
+#parceiro a{
+    vertical-align: baseline;
+}
+
+#parceiro option {
+    background-color:rgba(34, 34, 34, 0.7);
+    color: #ffffff;
+} 
+
+#parceiro .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#parceiro .spinner-border{
+    display: none;
+}

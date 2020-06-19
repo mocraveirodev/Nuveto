@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/3e0edc3a21.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="views/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="views/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="views/css/style.css">
     <link rel="stylesheet" href="views/css/m-style.css">
 </head>
@@ -54,15 +54,16 @@
                     <ul class="navbar-nav nav-redes">
                         <li class="nav-item">
                             <a class="nav-link" href="mailto:marketing@nuveto.com.br">
-                                <i class="far fa-envelope mr-2"></i> marketing@nuveto.com.br
+                                <i class="far fa-envelope mr-2"></i>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="tel:+551142008282">
-                                <i class="fas fa-phone-alt mr-2"></i> +55 (11) 4200-8282
+                                <i class="fas fa-phone-alt mr-2"></i>
                             </a>
                         </li>
                     </ul>
+                    <a href="/?#contato" class="btn btn-light">Parceiro - Registro de Oportunidades</a>
                 </div>        
             </div>
         </nav>    
@@ -83,10 +84,10 @@
                     </div>
                     <div class="carousel-item covid active">
                         <div class="banner-text">
-                            <p class="text-left">Programa</p>
-                            <p class="banner-yellow text-left">SOS COVID-19</p>
-                            <p class="">migre seu contact center para </p>
-                            <p class="banner-yellow text-right">home office em até 3 dias</p>
+                            <p class="text-left ml-5">Programa</p>
+                            <p class="banner-yellow text-left ml-5">SOS COVID-19</p>
+                            <p class="text-left ml-5">migre seu contact center para </p>
+                            <p class="banner-yellow text-left ml-5">home office em até 3 dias</p>
                             <a data-scroll href="#contato" class="btn btn-success btn-padrao mt-5">Saiba mais</a>
                         </div>
                     </div>
@@ -463,9 +464,9 @@
         <a href="https://twitter.com/nuvetobr" id="twitter" target="_blank">Twitter <i class="fab fa-twitter"></i></a>
     </div>
     
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./views/js/smoothscroll.js"></script>
     <?php
