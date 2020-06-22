@@ -173,12 +173,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-block btn-sm btn-success" onsubmit="toggle();">
-                                Submeter
-                                <div class="spinner-border text-light ml-2" role="status">
-                                    <span class="sr-only">Loading...</span>
-                                </div>
-                            </button>
+                            <button type="submit" class="btn btn-block btn-sm btn-success">Submeter</button>
                         </form>
                     </div>
                 </div>
@@ -191,7 +186,60 @@
                         <div class="modal-body">
                             <h3>Pronto!</h3>
                             <p>Em breve nossos especialistas irão entrar em contato para dar mais informações.</p>
-                            <a href="/?emailparceiro" class="btn btn-success btn-padrao" data-dismiss="modal" aria-label="Fechar">OK</a>
+                            <form action="/?email" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <input value="confirmacao@nuveto.com.br" name="from" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['mailContato']?>" name="toemail" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="Confirmação de Registro de Oportunidade | Nuveto" name="subject" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['nomeContato']?>" name="nome" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['empresaContato']?>" name="empresa" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['mailContato']?>" name="email" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['cargoContato']?>" name="cargo" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['telefoneContato']?>" name="telefone" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['tecatual']?>" name="tecatual" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['numberAgents']?>" name="numberAgents" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['industry']?>" name="industry" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['expecnegocio']?>" name="expecnegocio" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['excpecacordo']?>" name="excpecacordo" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="notes" id="notes" rows="3" placeholder="Notas sobre a oportunidade" hidden><?=$_SESSION['parceiro']['notes']?></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['nomerep']?>" name="nomerep" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['emailrep']?>" name="emailrep" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['telefonerep']?>" name="telefonerep" type="text" hidden />
+                                </div>
+                                <button type="submit" class="btn btn-success btn-padrao">OK</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -203,7 +251,60 @@
                         <div class="modal-body">
                             <h3>Erro!</h3>
                             <p>Houve um erro enviando o email. Tente de novo mais tarde!</p>
-                            <a href="/?emailparceiro" class="btn btn-success btn-padrao" data-dismiss="modal" aria-label="Fechar">OK</a>
+                            <form action="/?email" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <input value="confirmacao@nuveto.com.br" name="from" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['mailContato']?>" name="toemail" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="Confirmação de Registro de Oportunidade | Nuveto" name="subject" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['nomeContato']?>" name="nome" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['empresaContato']?>" name="empresa" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['mailContato']?>" name="email" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['cargoContato']?>" name="cargo" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['telefoneContato']?>" name="telefone" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['tecatual']?>" name="tecatual" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['numberAgents']?>" name="numberAgents" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['industry']?>" name="industry" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['expecnegocio']?>" name="expecnegocio" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['excpecacordo']?>" name="excpecacordo" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="notes" id="notes" rows="3" placeholder="Notas sobre a oportunidade" hidden><?=$_SESSION['parceiro']['notes']?></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['nomerep']?>" name="nomerep" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['emailrep']?>" name="emailrep" type="text" hidden />
+                                </div>
+                                <div class="form-group">
+                                    <input value="<?=$_SESSION['parceiro']['telefonerep']?>" name="telefonerep" type="text" hidden />
+                                </div>
+                                <button type="submit" class="btn btn-success btn-padrao">OK</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -273,11 +374,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./views/js/smoothscroll.js"></script>
-    <script>
-        function toggle() {
-            $(".spinner-border").toggle();
-        }
-    </script>
     <?php
         if(isset($_SESSION['mailresult'])){
             if($_SESSION['mailresult'] != ""){

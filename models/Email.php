@@ -82,17 +82,28 @@
             return $resultado;
         }
 
-        public function confirmaparceiro($email,$id_parceiro,$envio_op,$enviado,$msg_log){
+        public function confirmaparceiro($nome,$empresa,$email,$cargo,$telefone,$tec_atual,$num_agents,$industry,$expec_negocio,$expec_acordo,$notes,$nome_rep,$email_rep,$telefone_rep,$enviado,$msg_log){
             $db = parent::criarConexao();
-            
-            $query = $db->prepare("INSERT INTO confirmaparceiro (email,id_parceiro,envio_op,enviado,msg_log) VALUES (:email,:id_parceiro,:envio_op,:enviado,:msg_log)");
+
+            $query = $db->prepare("INSERT INTO confirmaparceiro (nome,empresa,email,cargo,telefone,tec_atual,num_agents,industry,expec_negocio,expec_acordo,notes,nome_rep,email_rep,telefone_rep,enviado,msg_log) VALUES (:nome,:empresa,:email,:cargo,:telefone,:tec_atual,:num_agents,:industry,:expec_negocio,:expec_acordo,:notes,:nome_rep,:email_rep,:telefone_rep,:enviado,:msg_log)");
+            $query->bindValue(":nome", $nome);
+            $query->bindValue(":empresa", $empresa);
             $query->bindValue(":email", $email);
-            $query->bindValue(":id_parceiro", $id_parceiro);
-            $query->bindValue(":envio_op", $envio_op);
+            $query->bindValue(":cargo", $cargo);
+            $query->bindValue(":telefone", $telefone);
+            $query->bindValue(":tec_atual", $tec_atual);
+            $query->bindValue(":num_agents", $num_agents);
+            $query->bindValue(":industry", $industry);
+            $query->bindValue(":expec_negocio", $expec_negocio);
+            $query->bindValue(":expec_acordo", $expec_acordo);
+            $query->bindValue(":notes", $notes);
+            $query->bindValue(":nome_rep", $nome_rep);
+            $query->bindValue(":email_rep", $email_rep);
+            $query->bindValue(":telefone_rep", $telefone_rep);
             $query->bindValue(":enviado", $enviado);
             $query->bindValue(":msg_log", $msg_log);
             $resultado = $query->execute();
-            
+
             return $resultado;
         }
 

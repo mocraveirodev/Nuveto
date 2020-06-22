@@ -7,11 +7,6 @@
             $controller = new HomeController();
             $controller->acao($rotas);
         break;
-        case "email":
-            include "controllers/HomeController.php";
-            $controller = new HomeController();
-            $controller->acao($rotas);
-        break;
         case "news":
             include "controllers/HomeController.php";
             $controller = new HomeController();
@@ -22,7 +17,7 @@
             $controller = new HomeController();
             $controller->acao($rotas);
         break;
-        case "emailparceiro":
+        case "email":
             include "controllers/HomeController.php";
             $controller = new HomeController();
             $controller->acao($rotas);
