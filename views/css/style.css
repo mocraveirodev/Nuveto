@@ -759,6 +759,10 @@ footer .footer-map-titulo{
     color: #242f36;
 }
 
+/* #parceiro p{
+    
+} */
+
 #parceiro .logon{
     width: 30%;
     height: auto;
@@ -768,9 +772,11 @@ footer .footer-map-titulo{
 #parceiro .distribuidor{
     display: flex;
     align-items: flex-end;
+    margin-bottom: 3rem;
 }
 
 #parceiro .distribuidor p{
+    font-size: 1.1rem;
     margin: 0;
     padding: 0 1%;
 }
@@ -779,7 +785,7 @@ footer .footer-map-titulo{
     width: 8%;
     height: auto;
     margin-bottom: 1%;
-    margin-left: 1%;
+    margin-left: 1.1%;
 }
 
 #parceiro h1{

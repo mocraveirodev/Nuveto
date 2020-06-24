@@ -28,7 +28,7 @@
                             <img src="views/img/logofive9fundotransparente.png" class="logof" alt="Logo Five9">
                         </div>
 
-                        <h1>Nuveto</h1>
+                        <!-- <h1>Nuveto</h1> -->
                         <p>Obrigado por registrar sua oportunidade de negócio em nome da Nuveto. Você precisará fornecer todas as informações que solicitarmos para que possamos revisar, encaminhar e acompanhar sua inscrição. Se você tiver dúvidas ao completar este formulário, por favor, envie um e-mail para <a class="text-success" href="mailto:oportunidade@nuveto.com.br">oportunidade@nuveto.com.br</a> e um membro do nosso time de canais irá entrar em contato para ajudá-lo a completar o processo.</p>
                         <p>Após preencher todos os campos, certifique-se de clicar no botão "Submeter" para garantir que a sua oportunidade seja registrada. Uma vez submetida, você irá receber um e-mail para confirmar o status da sua solicitação.</p>
                         <p>Obrigado por registrar sua oportunidade.</p>
