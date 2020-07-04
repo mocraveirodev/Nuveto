@@ -22,5 +22,10 @@
             $controller = new HomeController();
             $controller->acao($rotas);
         break;
+        case "login":
+            include "controllers/HomeController.php";
+            $controller = new HomeController();
+            $controller->acao($rotas);
+        break;
     }
 ?>

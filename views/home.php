@@ -1,73 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta name="description" content="Conheça a Nuveto, uma empresa inovadora de tecnologia para Atendimento ao cliente e Customer Experience CX. Visando a transformação das estratégias para melhorar o relacionamento das marcas com seus clientes, ajudando-as a se diferenciar neste cenário extremamente competitivo. Descubra o Cloud Solution Center.">
-    <meta name="keywords" content="Nuveto,Atendimento ao Cliente,CX,Customer Experience,Relacionamento ao cliente,Cloud,Cloudcomputing,CallCenter,Call-Center,Cloud Solution Center">
-    <meta name="author" content="Monica Craveiro">
-    <title>Nuveto - Cloud Solution Center</title>
-    <script src="https://kit.fontawesome.com/3e0edc3a21.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="views/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="views/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="views/css/style.css">
-    <link rel="stylesheet" href="views/css/m-style.css">
-</head>
-<body>
-    <header>
-        <nav data-scroll-header class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container">
-                <a data-scroll class="navbar-brand" href="#banner"><img src="views/img/LogoNuvetoBrancaVer.png" class="header-logo" alt="Logo Nuveto"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a data-scroll class="nav-link" href="#solucoes">Quem Somos</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a data-scroll class="nav-link" href="#solucoes">O que Fazemos</a>
-                        </li> -->
-                        <!-- <li class="nav-item">
-                            <a data-scroll class="nav-link" href="#">Por que a Nuvem?</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a data-scroll class="nav-link" href="#cases">Cases de Sucesso</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-scroll class="nav-link" href="#clientes">Clientes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-scroll class="nav-link" href="/?news">Notícias</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a data-scroll class="nav-link" href="#">Parceiros</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a data-scroll class="nav-link" href="#contato">Contato</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav nav-redes">
-                        <li class="nav-item">
-                            <a class="nav-link" href="mailto:marketing@nuveto.com.br">
-                                <i class="far fa-envelope mr-2"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tel:+551142008282">
-                                <i class="fas fa-phone-alt mr-2"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <a href="/?#contato" class="btn btn-light">Parceiro - Registro de Oportunidades</a>
-                </div>        
-            </div>
-        </nav>    
-    </header>
+<?php
+    include_once 'views/includes/top.php';
+    include_once 'views/includes/header.php';
+?>
+    
     <main>
         <section id="banner">
             <div id="carouselBanner" class="carousel slide" data-ride="carousel">
@@ -374,115 +309,12 @@
                 </div>
             </div>
         </section>
-        <section id="modal-contato">
-            <div class="modal fade" id="modalOk" tabindex="-1" role="dialog" aria-labelledby="modalOkTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <h3>Pronto!</h3>
-                            <p>Em breve nossos especialistas irão entrar em contato para dar mais informações.</p>
-                            <a class="btn btn-success btn-padrao" data-dismiss="modal" aria-label="Fechar">OK</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="modalErro" tabindex="-1" role="dialog" aria-labelledby="modalErroTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <h3>Erro!</h3>
-                            <p>Houve um erro enviando o email. Tente de novo mais tarde!</p>
-                            <a class="btn btn-success btn-padrao" data-dismiss="modal" aria-label="Fechar">OK</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php include_once 'views/includes/modal.php'; ?>
     </main>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <img src="views/img/LogoNuvetoBrancaVer.png" class="footer-logo" alt="Logo Nuveto">
-                <div class="footer-text">
-                    <div class="footer-endereco">
-                        <p class="loc">SÃO PAULO - SP - BRASIL</p>
-                        <p>Av. Roque Petroni Júnior, 850</p>
-                        <p>10º andar, Torre Jaceru</p>
-                        <p>Jardim das Acácias - CEP: 04707-000</p>
-                        <br>
-                        <p class="loc">BOGOTÁ - COLÔMBIA</p>
-                        <p>Carrera 7 #116-50</p>
-                        <p>Piso 6 - Oficina 6-127</p>
-                    </div>
-                    <div class="footer-map">
-                        <div class="footer-map-empresa">
-                            <nav>
-                                <ul>
-                                    <li><a data-scroll href="#banner" class="footer-map-titulo">Empresa</a></li>
-                                    <li><a data-scroll href="#solucoes">Quem Somos</a></li>
-                                    <li><a data-scroll href="/?news">Notícias</a></li>
-                                    <!-- <li><a data-scroll href="#solucoes">O que Fazemos</a></li> -->
-                                    <!-- <li><a data-scroll href="">Por que a Nuvem?</a></li>
-                                    <li><a data-scroll href="">Imprensa</a></li> -->
-                                    <li><a data-scroll href="#contato">Contato</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="footer-map-solucoes">
-                            <nav>
-                                <ul>
-                                    <li><a data-scroll href="#solucoes" class="footer-map-titulo">Soluções</a></li>
-                                    <li><a data-scroll href="#cases">Cases de Sucesso</a></li>
-                                    <li><a data-scroll href="#clientes">Clientes</a></li>
-                                    <!-- <li><a data-scroll href="">Parceiros</a></li>
-                                    <li><a data-scroll href="">Blog</a></li> -->
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-direitos">
-                    <p>Copyright &copy; 2020 Nuveto. Todos os direitos reservados.</p>
-                    <div class="footer-redes">
-                        <nav>
-                            <ul>
-                                <li><a target="_blank" href="https://www.linkedin.com/company/nuveto/"><i class="fab fa-2x fa-linkedin-in"></i></a></li>
-                                <li><a target="_blank" href="https://www.facebook.com/nuveto/"><i class="fab fa-2x fa-facebook-square"></i></a></li>
-                                <li><a target="_blank" href="https://twitter.com/nuvetobr"><i class="fab fa-2x fa-twitter"></i></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div id="redesSociais" class="social">
-        <a href="https://www.linkedin.com/company/nuveto/" id="linkedin" target="_blank">LinkedIn <i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.facebook.com/nuveto/" id="facebook" target="_blank">Facebook <i class="fab fa-facebook-square"></i></a>
-        <a href="https://twitter.com/nuvetobr" id="twitter" target="_blank">Twitter <i class="fab fa-twitter"></i></a>
-    </div>
     
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="./views/js/smoothscroll.js"></script>
-    <?php
-        if(isset($_SESSION['mailresult'])){
-            if($_SESSION['mailresult'] != ""){
-                echo "<script>$('#modalOk').modal('show');</script>";
-                unset($_SESSION['mailresult']);
-            }
-        }
-
-        if(isset($_SESSION['ErrorInfo'])){
-            if($_SESSION['ErrorInfo'] != ""){
-                echo "<script>$('#modalErro').modal('show');</script>";
-                unset($_SESSION['ErrorInfo']);
-            }
-        }
-    ?>
-</body>
-</html>
+<?php 
+    include_once 'views/includes/redessociais.php';
+    include_once 'views/includes/footer.php';
+    include_once 'views/includes/scripts.php';
+    include_once 'views/includes/bottom.php';    
+?>

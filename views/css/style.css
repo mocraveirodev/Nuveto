@@ -521,8 +521,27 @@ background: #d02b2f;
     color: #d02b2f;
 }
 
-#modal-contato .modal p{
+#modal-contato .modal p, #modal-contato span, #modal-contato label{
     color: #242f36;
+}
+
+#modal-contato .modal .logonav{
+    width: 7rem;
+}
+
+#modal-contato .modal-header .close{
+    margin: 0;
+    padding: 0;
+}
+
+#modal-contato .modal-header{
+    align-items: center;
+}
+
+#modal-contato .modal .erro{
+    font-family: lato-bold,sans-serif;
+    font-size: 1.2rem;
+    color: red;
 }
 
 /* ==========================================| FOOTER |========================================== */
@@ -759,33 +778,21 @@ footer .footer-map-titulo{
     color: #242f36;
 }
 
-/* #parceiro p{
-    
-} */
+#parceiro .distribuidor a{
+    width: 35%;
+}
 
-#parceiro .logon{
+#parceiro .distribuidor .logon{
+    width: 100%;
+}
+#parceiro .distribuidor .logof{
     width: 30%;
-    height: auto;
-    display: block;
 }
 
 #parceiro .distribuidor{
     display: flex;
-    align-items: flex-end;
+    justify-content: space-between;
     margin-bottom: 3rem;
-}
-
-#parceiro .distribuidor p{
-    font-size: 1.1rem;
-    margin: 0;
-    padding: 0 1%;
-}
-
-#parceiro .logof{
-    width: 8%;
-    height: auto;
-    margin-bottom: 1%;
-    margin-left: 1.1%;
 }
 
 #parceiro h1{
@@ -805,8 +812,4 @@ footer .footer-map-titulo{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#parceiro .spinner-border{
-    display: none;
 }
