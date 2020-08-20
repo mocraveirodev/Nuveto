@@ -813,3 +813,26 @@ footer .footer-map-titulo{
     align-items: center;
     justify-content: center;
 }
+
+/* ==========================================| APROVAÇÃO |========================================== */
+
+#aprova{
+    background: url('../img/hero-image.png') no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#aprova .parceiros{
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+#aprova .logon{
+    width: 8rem;
+    height: auto;
+}

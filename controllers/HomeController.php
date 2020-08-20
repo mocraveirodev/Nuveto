@@ -24,6 +24,12 @@
                 case "parceiro":
                     $this->viewParceiro();
                 break;
+                case "aprova":
+                    $this->aprovaParceiro();
+                break;
+                case "rejeita":
+                    $this->rejeitaParceiro();
+                break;
                 case "email":
                     $this->envioEmail();
                 break;
@@ -89,6 +95,22 @@
             return password_verify($senha,$usuario->senha) ? true : false;
         }
 
+        private function aprovaParceiro(){
+            $serialized = serialize(["nomeContato"=>"Monica Craveiro","empresaContato"=>"Deninho","mailContato"=>"Deninho","cargoContato"=>"Deninho","telefoneContato"=>"Deninho","tecatual"=>"Deninho","numberAgents"=>"Deninho","industry"=>"Deninho","expecnegocio"=>"Deninho","excpecacordo"=>"Deninho","notes"=>"Deninho","nomerep"=>"Deninho","telefonerep"=>"Deninho","emailrep"=>"Deninho"]);
+            // $parceiro = unserialize($_GET['aprova']);
+            $parceiro = unserialize($serialized);
+            // var_dump($parceiro);
+            $db = new Email();
+            $_SESSION['parceiro'] = $db->recuperaParceiro($parceiro["nomeContato"],$parceiro["empresaContato"],$parceiro["mailContato"],$parceiro["cargoContato"],$parceiro["telefoneContato"],$parceiro["tecatual"],$parceiro["numberAgents"],$parceiro["industry"],$parceiro["expecnegocio"],$parceiro["excpecacordo"],$parceiro["notes"],$parceiro["nomerep"],$parceiro["emailrep"],$parceiro["telefonerep"]);
+            // echo "<br><a href='/?aprova=$serialized' style='padding: 0.5rem 2rem; background-color: #28a745; margin-right: 1rem;color: #fff;text-decoration: none; font-weight: bold;'>Aprovar</a><a href='/?reprova=$serialized' style='padding: 0.5rem 2rem; background-color: #d02b2f; margin-right: 1rem;color: #fff;text-decoration: none; font-weight: bold;'>Reprovar</a>";
+            // var_dump($_SESSION['parceiro']);
+            include "views/aprova.php";
+        }
+
+        private function rejeitaParceiro(){
+
+        }
+
         private function envioEmail(){
             $from = (isset($_POST['from'])) ? $_POST['from']: "";
             $toemail = (isset($_POST['toemail'])) ? $_POST['toemail']: "";
@@ -127,9 +149,10 @@
                 case "oportunidade@nuveto.com.br":
                     $nameFrom = 'Oportunidade - Nuveto';
                     $origem = "Oportunidade";
-                    $message = "<img src='cid:topo-email' style=' width: 200px;height: auto;' alt='Topo Email'><br><br><h1 style='color: darkred;'>Oportunidade de Parceiro!</h1><br><br><strong>Nome:</strong> $nomeContato<br/><strong>Empresa:</strong> $empresaContato<br/><strong>E-mail:</strong> $mailContato<br/><strong>Cargo:</strong> $cargoContato<br/><strong>Telefone:</strong> $telefoneContato<br/><strong>Tecnologia Atual:</strong> $tecatual<br/><strong>Número de Representantes:</strong> $numberAgents<br/><strong>Setor:</strong> $industry<br/><strong>Expectativa de tamanho do Negócio:</strong> $expecnegocio<br/><strong>Expectativa de Finalização do Acordo:</strong> $excpecacordo<br/><strong>Notas sobre a oportunidade:</strong> $notes<br/><strong>Nome Representante:</strong> $nomerep<br/><strong>Telefone Representante:</strong> $telefonerep<br/><strong>Email Representante:</strong> $emailrep<br><br><div style='background-color: #242f36;width: 100%;height: 3rem;'></div>";
-                    $messagePlain = "==> Oportunidade de Parceiro! Nome: $nomeContato ========= Empresa: $empresaContato ========= E-mail: $mailContato ========= Cargo: $cargoContato ========= Telefone: $telefoneContato ========= Tecnologia Atual: $tecatual ========= Número de Representantes: $numberAgents ========= Setor: $industry ========= Expectativa de tamanho do Negócio: $expecnegocio ========= Expectativa de Finalização do Acordo: $excpecacordo ========= Notas sobre a oportunidade: $notes ========= Nome Representante: $nomerep ========= Telefone Representante: $telefonerep ========= Email Representante: $emailrep";
                     $_SESSION['parceiro'] = ["nomeContato"=>$nomeContato,"empresaContato"=>$empresaContato,"mailContato"=>$mailContato,"cargoContato"=>$cargoContato,"telefoneContato"=>$telefoneContato,"tecatual"=>$tecatual,"numberAgents"=>$numberAgents,"industry"=>$industry,"expecnegocio"=>$expecnegocio,"excpecacordo"=>$excpecacordo,"notes"=>$notes,"nomerep"=>$nomerep,"telefonerep"=>$telefonerep,"emailrep"=>$emailrep];
+                    $serialized = serialize($_SESSION['parceiro']);
+                    $message = "<img src='cid:topo-email' style=' width: 200px;height: auto;' alt='Topo Email'><br><br><h1 style='color: darkred;'>Oportunidade de Parceiro!</h1><br><br><strong>Nome:</strong> $nomeContato<br/><strong>Empresa:</strong> $empresaContato<br/><strong>E-mail:</strong> $mailContato<br/><strong>Cargo:</strong> $cargoContato<br/><strong>Telefone:</strong> $telefoneContato<br/><strong>Tecnologia Atual:</strong> $tecatual<br/><strong>Número de Representantes:</strong> $numberAgents<br/><strong>Setor:</strong> $industry<br/><strong>Expectativa de tamanho do Negócio:</strong> $expecnegocio<br/><strong>Expectativa de fechamento:</strong> $excpecacordo<br/><strong>Notas sobre a oportunidade:</strong> $notes<br/><strong>Nome Representante:</strong> $nomerep<br/><strong>Telefone Representante:</strong> $telefonerep<br/><strong>Email Representante:</strong> $emailrep<br><br><a href='/?aprova=$serialized' style='padding: 0.5rem 2rem; background-color: #28a745; margin-right: 1rem;color: #fff;text-decoration: none; font-weight: bold;'>Aprovar</a><a href='/?reprova=$serialized' style='padding: 0.5rem 2rem; background-color: #d02b2f; margin-right: 1rem;color: #fff;text-decoration: none; font-weight: bold;'>Reprovar</a><div style='background-color: #242f36;width: 100%;height: 3rem;'></div>";
+                    $messagePlain = "==> Oportunidade de Parceiro! Nome: $nomeContato ========= Empresa: $empresaContato ========= E-mail: $mailContato ========= Cargo: $cargoContato ========= Telefone: $telefoneContato ========= Tecnologia Atual: $tecatual ========= Número de Representantes: $numberAgents ========= Setor: $industry ========= Expectativa de tamanho do Negócio: $expecnegocio ========= Expectativa de fechamento: $excpecacordo ========= Notas sobre a oportunidade: $notes ========= Nome Representante: $nomerep ========= Telefone Representante: $telefonerep ========= Email Representante: $emailrep";
                 break;
                 case "confirmacao@nuveto.com.br":
                     $nameFrom = 'Oportunidade - Nuveto';

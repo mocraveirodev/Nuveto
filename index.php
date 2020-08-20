@@ -17,6 +17,16 @@
             $controller = new HomeController();
             $controller->acao($rotas);
         break;
+        case "aprova":
+            include "controllers/HomeController.php";
+            $controller = new HomeController();
+            $controller->acao($rotas);
+        break;
+        case "rejeita":
+            include "controllers/HomeController.php";
+            $controller = new HomeController();
+            $controller->acao($rotas);
+        break;
         case "email":
             include "controllers/HomeController.php";
             $controller = new HomeController();
