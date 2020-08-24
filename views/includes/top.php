@@ -9,10 +9,14 @@
     <meta name="keywords" content="Nuveto,Atendimento ao Cliente,CX,Customer Experience,Relacionamento ao cliente,Cloud,Cloudcomputing,CallCenter,Call-Center,Cloud Solution Center">
     <meta name="author" content="Monica Craveiro">
     <title>Nuveto - Cloud Solution Center</title>
+    <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/3e0edc3a21.js" crossorigin="anonymous"></script>
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="views/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="views/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- CSS PERSONALIZADO -->
     <link rel="stylesheet" href="views/css/style.css">
     <link rel="stylesheet" href="views/css/m-style.css">
 </head>

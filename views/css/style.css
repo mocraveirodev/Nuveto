@@ -820,7 +820,7 @@ footer .footer-map-titulo{
     background: url('../img/hero-image.png') no-repeat center center;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 #aprova .parceiros{
@@ -829,10 +829,26 @@ footer .footer-map-titulo{
     height: 100%;
     padding: 2rem;
     color: #fff;
-    text-align: center;
+}
+
+#aprova .topo{
+    display: flex;
+    align-items: flex-end;
 }
 
 #aprova .logon{
-    width: 8rem;
+    width: 12rem;
     height: auto;
+}
+
+#aprova .topo h1{
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-family: lato-black, sans-serif;
+}
+
+#aprova p{
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
 }
