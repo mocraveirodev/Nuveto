@@ -134,8 +134,8 @@
             $query->bindValue(":email_rep", $email_rep);
             $query->bindValue(":telefone_rep", $telefone_rep);
             $query->execute();
-            // $resultado = $query->fetchAll(PDO::FETCH_OBJ);
-            $resultado = $query->fetchAll();
+            $resultado = $query->fetchAll(PDO::FETCH_OBJ);
+            // $resultado = $query->fetchAll();
             return $resultado;
         }
 

@@ -819,8 +819,6 @@ footer .footer-map-titulo{
 #aprova{
     background: url('../img/hero-image.png') no-repeat center center;
     background-size: cover;
-    width: 100vw;
-    height: 100%;
 }
 
 #aprova .parceiros{
@@ -851,4 +849,14 @@ footer .footer-map-titulo{
 #aprova p{
     padding: 1.5rem 0;
     font-size: 1.5rem;
+}
+
+#aprova form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#aprova form button{
+    font-weight: bold;
+    padding: 0.5rem 3rem
 }
